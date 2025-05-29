@@ -1,0 +1,107 @@
+.data    
+lonhon: .asciiz "So lon hon: "
+bang: .asciiz "Hai so bang nhau"
+tong: .asciiz "\nTong: "
+hieu: .asciiz "\nHieu: "
+tich: .asciiz "\nTich: "
+thuong: .asciiz "\nThuong: "
+dacbiet: .asciiz "\nKhong co thuong"
+.text
+    
+main:   
+	# Nhap so nguyen thu nhat 
+   	li $v0, 5     	   		  # syscall de doc so nguyen 
+	syscall 
+   	move $s0, $v0      		 # luu so nguyen thu nhat vao $s0 
+ 
+	# Nhap so nguyen thu hai 
+    	li $v0, 5				# syscall de doc so nguyen 
+    	syscall 
+    	move $s1, $v0			#luu so nguyen thu hai vao $s1
+    	
+	#Bang nhau
+	bne $s0, $s1, Sosanh	#2 so khac nhau thi den Sosanh
+	li $v0, 4
+	la $a0, bang
+	syscall				#xuat "Hai so bang nhau"
+	j Cong				#Den Cong
+    
+Sosanh:
+	li $v0, 4
+	la $a0, lonhon
+	syscall
+	
+	slt $t1, $s0, $s1		# $t1 = 1 neu $s0 < $s1
+	bne $t1, $zero, Nhohon	# $s0 < $s1 -> Nhohon
+	j Lonhon				#$s0 > $s1 -> Lonhon
+	
+Nhohon:
+
+	li $v0, 1
+	move $a0, $s1			#Xuat $s1 la so lon hon
+	syscall
+	j Cong				#Den Cong
+
+Lonhon:
+	li $v0, 1
+	move $a0, $s0
+	syscall				#Xuat $s0 la so lon hon
+    
+Cong:    
+	add $s2, $s0, $s1   	# $s2 = $s0 + $s1
+ 
+ 	li $v0, 4
+ 	la $a0, tong
+ 	syscall				#Xuat "\nTong: "	
+    # in tong ra man hinh 
+    li $v0, 1         		  # syscall de in so nguyen 
+    move $a0, $s2     		  # chuyen tong vao $a0 
+    syscall 
+ 
+Tru: 
+	sub $s3, $s0, $s1			#$s3 = $s0 - $s1
+
+ 	li $v0, 4
+ 	la $a0, hieu
+ 	syscall					#Xuat "\nHieu: "
+    # in hieu ra man hinh 
+    li $v0, 1           # syscall de in so nguyen 
+    move $a0, $s3       # chuyen tong vao $a0 
+    syscall 
+    
+Nhan:
+	li $v0, 4
+	la $a0, tich
+	syscall			#Xuat "\nTich: "
+	
+	mult $s0, $s1		# $s0 x $s1
+	mflo $s4			# Luu gia tri nhan vào thanh ghi $s4
+	
+	li $v0, 1
+	move $a0, $s4
+	syscall			#xuat gia tri $s4 
+	
+#Chia
+	beqz $s1, Dacbiet	#So thu 2 = 0 -> Dacbiet
+	
+Chia:
+	li $v0, 4
+	la $a0, thuong
+	syscall			#Xuat "\nThuong"
+			
+	div $s0, $s1		# $s0 / $s1
+	mflo $s5			# Luu gia tri chia vao thanh ghi $s5
+	
+	li $v0, 1
+	move $a0, $s5
+	syscall			#xuat gia tri $s5
+	j EXIT			#Ket thuc
+
+Dacbiet: 				#Truong hop so thu 2 = 0
+	li $v0, 4
+	la $a0, dacbiet
+	syscall			#Xuat "\nKhong co thuong"
+	
+    # Ket thuc chuong trinh 
+EXIT:    li $v0, 10          # syscall de ket thuc 
+   	 syscall 

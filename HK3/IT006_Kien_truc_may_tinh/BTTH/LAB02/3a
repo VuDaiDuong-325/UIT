@@ -1,0 +1,132 @@
+.data
+str: 	.asciiz "Nhap ky tu (chi mot ky tu): "
+str1:	.asciiz "\nKy tu truoc: "
+str2: 	.asciiz "\nKy tu sau: "
+so:		.asciiz "\nSo"
+chuthuong:.asciiz "\nChu thuong"
+chuhoa:	.asciiz "\nChu hoa"
+khac: 	.asciiz "\ninvalid type"
+.text
+
+main: 
+#Nhap 1 ky tu
+	li $v0, 4
+	la $a0, str
+	syscall				#xuat "Nhap ky tu (chi mot ky tu): "
+	
+	li $v0, 12			#Nhap ky tu voi dang character
+	syscall		
+	move $s0, $v0			#Luu gia tri vao thanh ghi $s0
+	
+#Kiem tra ky tu
+#Chu thuong
+	slti $t0, $s0, 123		#$t0 = 1 neu $s0 < 123 (z = 122)
+	beq $t0, $zero, Khac 	#$s0 >= 123 thì den Khac
+	slti $t0, $s0, 97		#$t0 = 1 neu $s0 < 97 (a = 97)
+	bne $t0, $zero, ChuHoa	#$s0 < 97 thì den ChuHoa
+	 #Xét ký tu trong doan 97 -> 122 (doan ascii cua chu thuong)
+#ky tu truoc
+	subi $s1, $s0, 1		#Tim ky tu lien truoc $s0
+	
+	li $v0, 4
+	la $a0, str1
+	syscall				#Xuat "\nKy tu truoc: "
+	
+	li $v0, 11
+	move $a0, $s1
+	syscall				#Xuat ky tu truoc 
+	
+#ky tu sau
+	addi $s2, $s0, 1		#Tim ky tu lien sau $s0
+	
+	li $v0, 4
+	la $a0, str2
+	syscall				#Xuat "\nKy tu sau: "
+	
+	li $v0, 11
+	move $a0, $s2
+	syscall				#Xuat ky tu sau
+	
+	li $v0, 4
+	la $a0, chuthuong 
+	syscall				#Xuat dong chu thuong
+	j EXIT				#Ket thuc
+	 
+#Chu hoa
+ChuHoa: 
+	slti $t0, $s0, 91		#$t0 = 1 neu $s0 < 91 (Z = 90)
+	beq $t0, $zero, Khac	#$s0 >= 91 thì den Khac
+	slti $t0, $s0, 65		#$t0 = 1 neu $s0 < 65 (A = 65)
+	bne $t0, $zero, So		#$s0 < 65 thì den So
+		#Xét ký tu trong doan 65 -> 90 (chu hoa)
+
+#ky tu truoc
+	subi $s1, $s0, 1		
+	
+	li $v0, 4
+	la $a0, str1
+	syscall				
+	
+	li $v0, 11
+	move $a0, $s1
+	syscall
+	
+#ky tu sau
+	addi $s2, $s0, 1
+	
+	li $v0, 4
+	la $a0, str2
+	syscall
+	
+	li $v0, 11
+	move $a0, $s2
+	syscall
+	
+	li $v0, 4
+	la $a0, chuhoa
+	syscall				#Xuat "\nChu hoa"
+	j EXIT				#Ket thuc
+	
+#So
+So: 
+	slti $t0, $s0, 58		#$t0 = 1 neu $s0 < 58 (9 = 57)
+	beq $t0, $zero, Khac	#$s0 >= 58 thì den Khac
+	slti $t0, $s0, 48		#$t0 = 1 neu $s0 < 48 (0 = 48)
+	bne $t0, $zero, Khac	#$s0 < 48 thi den Khac
+		#Xét ký tu trong doan 48 -> 57 (so)
+#ky tu truoc
+	subi $s1, $s0, 1
+	
+	li $v0, 4
+	la $a0, str1
+	syscall
+	
+	li $v0, 11
+	move $a0, $s1
+	syscall
+	
+#ky tu sau
+	addi $s2, $s0, 1
+	
+	li $v0, 4
+	la $a0, str2
+	syscall
+	
+	li $v0, 11
+	move $a0, $s2
+	syscall
+	
+	li $v0, 4
+	la $a0, so
+	syscall				#Xuat "\nSo"
+	j EXIT				#Ket thuc
+	
+#invalid type
+Khac: 
+	li $v0, 4
+	la $a0, khac
+	syscall				#Xuat "\ninvalid type"
+EXIT:					#Ket thuc
+	
+
+

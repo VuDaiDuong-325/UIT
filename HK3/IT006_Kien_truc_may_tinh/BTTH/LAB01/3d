@@ -1,0 +1,44 @@
+.data 
+overflow: .asciiz "Overflow"
+str1: .asciiz "So thu nhat: "
+str2: .asciiz "So thu hai: "
+str: .asciiz "Tong: "
+
+.text
+main:
+	li $v0, 4
+	la $a0, str1
+	syscall
+
+	li $v0, 5
+	syscall				#Nhap so nguyen thu nhat
+	move $s0, $v0
+	
+	li $v0, 4
+	la $a0, str2
+	syscall
+	
+	li $v0, 5
+	syscall				#Nhap so nguyen thu hai
+	add $s1, $s0, $v0
+	blt $s1, $s0, Overflow		#kiem tra tran
+	
+	add $s0, $s0, $v0
+	
+	
+	li $v0, 4
+	la $a0, str
+	syscall
+	
+	li $v0, 1
+	move $a0, $s0
+	syscall
+	j EXIT
+	
+Overflow:
+	li $v0, 4
+	la $a0, overflow
+	syscall
+	
+EXIT:
+	

@@ -1,0 +1,3 @@
+ip: 224 thay đổi được đến ip nào
+224(10) -> 1110 0000(2)
+- 4 bits đầu không được thay đổi, chỉ đc thay đổi 4 bits sau (0000 -> 1111 <=> 0 -> 15) -> [224; 239] 

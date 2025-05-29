@@ -1,0 +1,8 @@
+https://vietnamnet.vn -> 202.134.19.38:443 -> đưa từ dạng chữ về dạng ip (số) theo mô hình 5 lớp
+DNS: domain name system -> là hệ thống net
+Mạng cục bộ -> (Bên trong) - router - (Bên ngoài) <- 4g,...
+DNS 4 tầng: Root -> Top Level Domain -> Authoritative -> Local DNS
+Root DNS servers (chuyển tiếp)
+nguyên lý Catching -> mọi server đều lưu catching riêng (có thời hạn) -> refresh thường xuyên
+Authoritative server đều trả lời được các câu hỏi
+Thời gian sống (thời gian refresh) đều phụ thuộc vào authoritative security

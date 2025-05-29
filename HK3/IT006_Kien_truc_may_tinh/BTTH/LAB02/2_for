@@ -1,0 +1,44 @@
+.data
+overflow: .asciiz "\nTran so"
+N: .asciiz "N: "
+Sum: .asciiz "Sum = "
+.text
+
+main:
+	li $v0, 4
+	la $a0, N
+	syscall				#xuat "N: "
+	
+	li $v0, 5				#Nhap N
+	syscall			
+	move $s1, $v0			#Luu N vao gia tri thanh ghi $s1
+	
+	li $s2, 0				# $s2 = 0
+	li $s0, 1				# $s0 = 1
+LOOP: slt $t0, $s1, $s0		# $t0 = 1 neu $s1 < $s0 (N < i)
+	bne $t0, $zero, Xuat	# $t0 = 1 thì den EXIT
+	
+	add $s3, $s2, $s0		#Kiem tra tran so
+	blt $s3, $s2, Overflow
+	
+	add $s2, $s2, $s0		# $s2 = $s2 + $s0 
+	
+	addi $s0, $s0, 1		# $s0 = $s0 + 1 (tang i lên 1 dv)
+	j LOOP				# Nhay lai ve LOOP
+	
+Xuat: 
+	li $v0, 4
+	la $a0, Sum
+	syscall				#xuat "Sum = "
+	
+	li $v0, 1
+	move $a0, $s2
+	syscall				#xuat gia tri Sum
+	j EXIT
+
+Overflow:
+	li $v0, 4
+	la $a0, overflow
+	syscall
+	
+EXIT:

@@ -1,0 +1,56 @@
+Port Listening -> Handshake 
+package switch: gửi theo thứ tự -> nhận không theo thứ tự
+sircuit switch: gửi theo thứ tự -> nhận theo thứ tự
+
+- Thiết lập quy tắc đánh số ở phiên Handshake  
+- 1 ứng dung có nhiều port khác nhau cho mỗi máy (cơ chế cấp phát động)
+- Cơ chế cấp phát: UDP, TCP, QUIC
+- Cơ chế nhận TCP: tin cậy, đánh số để nối, quản lý tắc nghẽn, log, theo thứ tự.
++ TCP header:
+	- 2 bytes cho port nguồn (source port addr) và 2 bytes cho port đích (destination port addr)
+	- Bắt tay 3 bước -> 4 bytes đánh số (sequence number) -> nối lại
+	- 4 bytes nhận (acknowledgement number) -> Muốn nhận packet số nào tiếp.
+	- 1 byte HLEN 
+	- 1 byte dự trữ (reserved)
+	- 2 bytes thông báo bộ nhớ đệm (Window size)
+	- 2 bytes checksum
+	- 2 bytes ugent pointer
+- Cơ chế nhận UDP: không tin cậy, không đánh số (do không có cơ chế HandShake), không quản lý tắc nghẽn, không log, độ trễ thấp, không theo thứ tự.
++ UDP (User Datagram Protocol)
++ Ứng dung sử dung UDP: cần độ trễ thấp, không ảnh hưởng khi mất mát vài dữ liệu, dữ liệu đến không cần theo thứ tự 1 vài byte -> xem phim
++ UDP header: 8 bytes
+	- 2 bytes cho port nguồn (source port)
+	- 2 bytes cho port đích (destination port)
+	- 2 bytes cho độ dài (length)
+	- 2 bytes cho Checksum (hex -> bin) - Chia thành nhiều block, mỗi block 2 bytes ->Cộng nhiều block 2 bytes ra kết quả 2 bytes -> Phần dư đưa xuống dưới cộng tiếp -> revert bits (đảo bits) -> Checksum  => Có thể có những trường hợp nhận bits sai nhưng người nhận không phát hiện được
+- QUIC: extension của UDP
+
+- Multiplexing (Đa kênh): gắn port khác nhau
+- Đa kênh xảy ra tại mọi layers 
+- 2 máy nói chuyện đc vs nhau: 
++ IP
++ Port 
++ Giao thức truyền đi: TCP, UDP, QUIC
+
+- Cơ chế kiểm soát lỗi: (reliable channel)
++ Máy gửi phải có cơ chế để máy nhận kiểm tra
+
+- Giao tiếp:
++ Handshake
++ Quy tắc thỏa thuận chung
+
+- Cơ chế kiểm soát log:	-> Độ trễ
++ Check log
++ Request để gửi lại
+
+- Kiểm tra độ tắc nghẽn -> thời gian trung bình -> khi nào nên request gửi lại
+- Manh mối: 2 đầu cung cấp; thông qua các máy trung gian
+
+- Cơ chế thông báo trạng thái:
++ Khoảng tgian chờ: tùy thuộc vào tình trạng và yêu cầu của ứng dụng
+
+- RTT: phụ thuộc vào tình trạng mạng
+
+- Cơ chế Go-Back-N: gửi đi 1 cụm -> nhanh hơn, tốn băng thông hơn
++ Duplication: loại bỏ các packet trùng nhau, đến trước thì nhận, đến sau thì bỏ
+

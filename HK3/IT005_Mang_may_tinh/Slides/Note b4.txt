@@ -1,0 +1,14 @@
+Cache - là 1 dạng proxy => Dùng để tăng tốc tốc độ request-response
+https = http + pos (nằm ở presentation layer (lớp trình chiếu) - trong mô hình 7 lớp
+HTTP/2: xử lý các requests song song, không cần tuần tự => giảm tgian chạy 
+Trinh duyệt handle các request theo từng session để trả về đúng session đó
+HTTP/3:
+3 phần cần nhớ: TCP/UDP/QUIC 
+QUIC: 
+Mail-client (https...) -> mail server -> client
+Giao thức trao đổi giữa các gmail (simple mail transfer protocol): SMTP
+A --- (SMTP) ---> A mail server --- (SMTP) ---> B mail server --- (IMAP, HTTP, POP3, ...) ---> B
+- giao thức đẩy lên
+- giao thức trao đổi giữa mail server (SMTP)
+- giao thức lấy về (IMAP, POP, HTTP)
+IMAP: Internet Mail Access Protocol

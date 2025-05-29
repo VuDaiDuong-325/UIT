@@ -1,0 +1,20 @@
+thuật toán Dijkstra 
+- Hạn chế:
++ Phải biết tất cả các node, biết đâu là node neighbor -> phải check từng node -> tốn tgian 
++ không ổn định -> link state phụ thuộc vào điều kiện mạng
++ cập nhật tất cả các node
+
+thuật toán Distance Vector
+- Chỉ cần biết, cập nhật neighbor nodes
+- Chỉ broadcast khi cập nhật node
+- Đường đi = min(khoảng cách đến neighbor node + đường đi ngắn nhất từ neighbor node -> destination node)
+B1: xác đinh neighbor
+B2: các neighbor xác định khoảng cách đến các neighbor của nó (t = 0)
+B3: cập nhật khoảng cách về node (t = 1)
+- Hạn chế:
++ Selfish node (nếu đường đi từ neighbor đến dest quá dài thì node đó sẽ luôn rảnh) -> không kiểm soát luồng -> dễ bị tấn công trên đường đi
++ Xảy ra trường hợp quá nhiều dữ lieu cần truyền trên 1 đường đi -> nếu drop thì gây ra nghẽn vì chỉ đi đường ngắn nhất
++ Node đưa ra thiếu các neighbor => dữ liệu fake -> Thường bị attack vào phần này
++ Dựa hoàn toàn vào các trusted node
+- Tắc nghẽn:
++ 1 node bị tắc nghẽn -> node đó sẽ cập nhật (tăng) trọng số đến các neighbor -> Các node khác sẽ tìm đường đi ngắn hơn để đi 

@@ -1,0 +1,52 @@
+.data
+i: .asciiz "i: "
+j: .asciiz "j: "
+g: .asciiz "g: "
+h: .asciiz "h: "
+f: .asciiz "f = "
+.text
+main:
+	li $v0, 4
+	la $a0, i		
+	syscall			#xuat "i: "
+	
+	li $v0, 5			#Nhap i
+	syscall 
+	move $s0, $v0		#Luu i vao gia tri thanh ghi $s0
+	
+	li $v0, 4
+	la $a0, j
+	syscall			#xuat "j: "
+	
+	li $v0, 5			#Nhap j
+	syscall
+	move $s1, $v0		#Luu j vao gia tri thanh ghi $s1
+	
+	li $v0, 4
+	la $a0, g
+	syscall			#xuat "g: "
+	
+	li $v0, 5			#nhap g
+	syscall
+	move $t0, $v0		#Luu g vao gia tri thanh ghi $t0
+	
+	li $v0, 4
+	la $a0, h
+	syscall			#xuat "h: "
+	
+	li $v0, 5			#Nhap h
+	syscall
+	move $t1, $v0		#Luu h vao gia tri thanh ghi $t1
+	
+	Bne $s0, $s1, ELSE	#if (i != j) -> ELSE
+	Add $s2, $t0, $t1	#if (i == j) -> f = g + h
+	J EXIT			#Den EXIT
+ELSE: sub $s2, $t0, $t1	#if (i != j) -> f = g - h
+
+EXIT: li $v0, 4
+	la $a0, f			
+	syscall			#xuat "f= "
+	
+	li $v0, 1
+	move $a0, $s2
+	syscall			#xuat gia tri f

@@ -1,0 +1,13 @@
+CRC (Cyclic redundancy check):
+- Chuyển message thành binary => Lấy mod (chia lấy dư) => So sánh bit dư (R) với bit gửi 
+	+ Khác => Lỗi
+- Số bit gửi đi phụ thuộc vào tỷ lệ lỗi (số bit lỗi)
+- Không thể sửa lỗi
+
+Parity check:
+- Kiểm tra số bit 1 trong data là chẵn hay lẻ
+	+ Số bit 1 trong data bit là chẵn => parity bit = 0
+	+ Số bit 1 trong data bit là lẻ => parity bit = 1
+- Gửi theo ma trận (Cột x dòng) để kiểm tra lỗi
+
+Các LAN kết nối với nhau qua VLAN name
