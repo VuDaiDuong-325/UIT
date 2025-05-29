@@ -1050,3 +1050,31 @@ dkms.conf
 *.dis
 # C/C++ binary extension file
 *.bin
+
+# Assembly object files
+*.o
+*.obj
+
+# Assembly listing files
+*.lst
+
+# Assembly output files
+*.bin
+*.hex
+*.elf
+*.map
+
+# Debug and temporary files for assembly projects
+*.dmp
+*.sym
+*.dbg
+*.lst
+*.map
+
+# NASM or MASM output files
+*.inc
+
+# Assembler generated files
+*.cod
+*.lib
+*.ilk
