@@ -22,6 +22,18 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 ---
 
+## 💻 Course Tools Used
+
+| Course Code | Course Name                               | Tools Used |
+|-------------|--------------------------------------------|------------|
+| IT003       | Data Structures & Algorithms (DSA)         | VS, VSCode |
+| IT004       | Structured Query Language (SQL)            | SQL Server |
+| IT005       | Intro to Computer Networks                 | Wireshark, Charles, curl, Packet Tracer, VirtualBox |
+| IT006       | Computer Architecture                      | MARS |
+| CE103       | Microprocessors & Microcontrollers         | Proteus, LTSpice, ASM 8086 Emulator, STM32CubeIDE/MX |
+| CE122       | Engineering Circuit Analysis               | Proteus |
+| IT007       | Operating Systems (OS)                     | Ubuntu, WSL, VSCode |
+
 ## 📦 Git Configuration Files
 
 - `.gitignore`: For Assembly and C/C++ projects
@@ -34,6 +46,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 The folders above are linked using **Git Submodules** to keep them in sync with their respective repositories.
 
+```md
 After cloning this repository, run the following command to initialize all submodules:
 
 ```bash
