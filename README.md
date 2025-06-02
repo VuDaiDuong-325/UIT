@@ -9,15 +9,15 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | Semester | Course                                 | Linked Folder                 |
 |----------|----------------------------------------|-------------------------------|
 | [HK3](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK3) | IT003 - Data Structures & Algorithms   | [`HK3_DSA`](https://github.com/VuDaiDuong-23520359/HK3_DSA) *(submodule)* |
-|          | IT004 - Structured Query Language      |                               |
-|          | IT005 - Computer Network               |                               |
-|          | IT006 - Computer Architecture          |                               |
-|          | SS009 - Scientific Socialism           |                               |
-|          | SS009 - Party History                  |                               |
-| [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103 - Microprocessor & Embedded      | [`MPU-MCU_project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project) *(submodule)* |
-|          | CE122 - Technical circuit analysis     |                               |
-|          | IT007 - Operating Systems              | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
-|          | SS008 - Political Economy              |                               |
+|          | IT004 - Structured Query Language                  |                               |
+|          | IT005 - Introduction to computer networks          |                               |
+|          | IT006 - Computer Architecture                      |                               |
+|          | SS009 - Scientific Socialism                       |                               |
+|          | SS010 - History of Vietnamese communist party      |                               |
+| [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103 - Microprocessors & microcontrollers      | [`MPU-MCU_project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project) *(submodule)* |
+|          | CE122 - Engineering Circuit Analysis               |                               |
+|          | IT007 - Operating Systems                          | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
+|          | SS008 - Marxism–Leninism political economy         |                               |
 
 ---
 
