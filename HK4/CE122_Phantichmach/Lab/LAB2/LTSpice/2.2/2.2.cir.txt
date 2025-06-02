@@ -1,0 +1,19 @@
+R8 N002 N001 1k
+R9 N003 N002 2k
+R10 N008 N003 4k7
+R11 N011 N008 4k7
+R12 N011 N005 4k7
+R6 N005 N003 {x}
+R7 NC_01 N005 {y}
+R1 N005 N006 {y2}
+R2 N006 NC_02 {x2}
+V1 N001 N011 3.3
+R3 N008 N006 1
+.op
+.step param x 1k 5k 1k
+.step param y 1k 5k 1k
+.param x2 = 2k
+.param y2 = 2k
+.tran 0 10 0 1
+.meas tran I_R3 FIND I(R3) AT=1
+.end

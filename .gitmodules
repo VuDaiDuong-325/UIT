@@ -1,3 +1,9 @@
 [submodule "HK3/IT003_DSA/Thuc_hanh"]
 	path = HK3/IT003_DSA/Thuc_hanh
 	url = https://github.com/VuDaiDuong-23520359/HK3_DSA.git
+[submodule "HK4/CE103_Vxl-vdk/Project"]
+	path = HK4/CE103_Vxl-vdk/Project
+	url = https://github.com/VuDaiDuong-23520359/MPU-MCU_project.git
+[submodule "HK4/IT007_HDH"]
+	path = HK4/IT007_HDH
+	url = https://github.com/VuDaiDuong-23520359/OS_ubuntu.git

@@ -1,0 +1,9 @@
+* Netlist cho mạch đã cho
+Vin in 0 AC 5
+R1 in mid 510
+L1 mid 0 1mH
+RPOT3 mid out 2k6
+C5 out 0 22uF
+
+.ac dec 10k 1 200keg
+.END

@@ -1,0 +1,25 @@
+V1 N010 N006 5V
+R1 N001 N004 1k
+R2 N001 N004 1k
+R3 N002 N001 1k
+R4 N003 N002 1k
+R5 N003 N001 5k
+R6 N003 N009 4k7
+R7 N006 N003 3k
+R8 N004 N010 {x}
+R9 NC_01 N004 {max(5k-x, 1m)}
+R10 N009 N011 {x2}
+R11 NC_02 N009 {max(4k-x2, 1m)}
+R12 N001 N011 1m
+
+* Thêm điện trở nối N011 xuống GND để tránh lỗi
+R_fix N011 0 10Meg
+
+.op
+.tran 0 10 0 1
+.STEP PARAM x 0 5k 0.1k
+.param x2 = 2k
+.meas TRAN I_R12 AVG I(R12)
+.meas TRAN I_R12_MAX MAX I(R12)
+.plot TRAN I(R12)
+.end

@@ -1,0 +1,8 @@
+* RC High-Pass Filter with Potentiometer
+Vin in 0 AC 5
+R2 out 0 5k
+C2 in out 39p
+
+* Analysis Commands
+.ac dec 100 1k 1Meg
+.end

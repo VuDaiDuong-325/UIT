@@ -1,0 +1,10 @@
+* Dual RC Network
+Vin in 0 AC 5
+R3 in mid 6.8k
+C3 mid out 33p
+R4 out 0 13k
+C4 out 0 33p
+
+* Analysis Commands
+.ac dec 100 1k 1Meg  ; Frequency sweep: 1kHz to 100MHz
+.end

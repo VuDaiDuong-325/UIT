@@ -1,0 +1,9 @@
+* RC Low-Pass Filter
+V1 in 0 AC 5
+
+R1 in out 3k6
+C1 out 0 39p
+
+* Analysis commands
+.ac dec 100 1k 1Meg
+.end
