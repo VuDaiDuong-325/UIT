@@ -23,7 +23,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 ---
 
 ## 💻 Course Tools Used
-```md
+
 | Course Code | Course Name                               | Tools Used |
 |-------------|--------------------------------------------|------------|
 | IT003       | Data Structures & Algorithms (DSA)         | VS, VSCode |
