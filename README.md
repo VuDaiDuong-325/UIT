@@ -9,6 +9,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | Semester | Course                                 | Linked Folder                 |
 |----------|----------------------------------------|-------------------------------|
 | HK3      | IT003 - Data Structures & Algorithms | [`HK3_DSA/Thuc_hanh`](https://github.com/VuDaiDuong-23520359/HK3_DSA/tree/main/Thuc_hanh) *(submodule)* |
+| |IT004 - SQL | |
 | HK4      | CE103 - Microprocessor & Embedded    | [`MPU-MCU_project/Project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project/tree/main/Project) *(submodule)* |
 | HK4      | IT007 - Operating Systems (Ubuntu)   | [`OS_ubuntu/IT007_HDH`](https://github.com/VuDaiDuong-23520359/OS_ubuntu/tree/main/IT007_HDH) *(submodule)* |
 
