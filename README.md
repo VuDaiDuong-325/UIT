@@ -23,7 +23,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 ---
 
 ## 💻 Course Tools Used
-
+```md
 | Course Code | Course Name                               | Tools Used |
 |-------------|--------------------------------------------|------------|
 | IT003       | Data Structures & Algorithms (DSA)         | VS, VSCode |
@@ -46,7 +46,6 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 The folders above are linked using **Git Submodules** to keep them in sync with their respective repositories.
 
-```md
 After cloning this repository, run the following command to initialize all submodules:
 
 ```bash
