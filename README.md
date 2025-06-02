@@ -12,6 +12,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | IT004 - Structured Query Language                  |                               |
 |          | IT005 - Introduction to computer networks          |                               |
 |          | IT006 - Computer Architecture                      |                               |
+|          | SS006 - Introduction to law                        |                               |
 |          | SS009 - Scientific Socialism                       |                               |
 |          | SS010 - History of Vietnamese communist party      |                               |
 | [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103 - Microprocessors & microcontrollers      | [`MPU-MCU_project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project) *(submodule)* |
