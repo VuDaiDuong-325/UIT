@@ -48,6 +48,8 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | CE122       | Engineering Circuit Analysis               | Proteus, LTSpice |
 | IT007       | Operating Systems (OS)                     | Ubuntu, WSL, VSCode |
 
+---
+
 ## 📦 Git Configuration Files
 
 - `.gitignore`: For Assembly and C/C++ projects
