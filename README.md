@@ -30,8 +30,8 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | IT004       | Structured Query Language (SQL)            | SQL Server |
 | IT005       | Intro to Computer Networks                 | Wireshark, Charles, curl, Packet Tracer, VirtualBox |
 | IT006       | Computer Architecture                      | MARS |
-| CE103       | Microprocessors & Microcontrollers         | Proteus, LTSpice, ASM 8086 Emulator, STM32CubeIDE/MX |
-| CE122       | Engineering Circuit Analysis               | Proteus |
+| CE103       | Microprocessors & Microcontrollers         | Proteus, ASM 8086 Emulator, STM32CubeIDE/MX |
+| CE122       | Engineering Circuit Analysis               | Proteus, LTSpice |
 | IT007       | Operating Systems (OS)                     | Ubuntu, WSL, VSCode |
 
 ## 📦 Git Configuration Files
