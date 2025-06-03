@@ -8,27 +8,27 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 | Semester | Course                                 | Linked Folder                 |
 |----------|----------------------------------------|-------------------------------|
-| [HK1](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK1)         | CE005 - Introduction to Computer Engineering                |                               |
-|          | IT001 - Introduction to programming                |                               |
-|          | MA003 - Linear algebra                             |                               |
-|          | MA006 - Calculus                                   |                               |
-|          | SS007 - 	Philosophy Marx - Lenin                 |                               |
-| [HK2](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK2)         | IT002 - Object-oriented programming                         |                               |
-|          | MA004 - Discrete structures                        |                               |
-|          | MA005 - Probability and statistics                 |                               |
-|          | PH002 - Introduction to digital circuit            |                               |
-|          | SS004 - Professional skills                        | [`SS004.10`](https://github.com/hamstrous/SS004.10) *(submodule)*                             |
-| [HK3](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK3) | IT003 - Data Structures & Algorithms   | [`HK3_DSA`](https://github.com/VuDaiDuong-23520359/HK3_DSA) *(submodule)* |
-|          | IT004 - Structured Query Language                  |                               |
-|          | IT005 - Introduction to computer networks          |                               |
-|          | IT006 - Computer Architecture                      |                               |
-|          | SS006 - Introduction to law                        |                               |
-|          | SS009 - Scientific Socialism                       |                               |
-|          | SS010 - History of Vietnamese communist party      |                               |
-| [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103 - Microprocessors & microcontrollers      | [`MPU-MCU_project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project) *(submodule)* |
-|          | CE122 - Engineering Circuit Analysis               |                               |
-|          | IT007 - Operating Systems                          | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
-|          | SS008 - Marxism–Leninism political economy         |                               |
+| [HK1](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK1)         | CE005     -   Introduction to Computer Engineering                |                               |
+|          | IT001  -   Introduction to programming                |                               |
+|          | MA003  -   Linear algebra                             |                               |
+|          | MA006  -   Calculus                                   |                               |
+|          | SS007  - 	Philosophy Marx - Lenin                 |                               |
+| [HK2](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK2)         | IT002     -   Object-oriented programming                         |                               |
+|          | MA004  -   Discrete structures                        |                               |
+|          | MA005  -   Probability and statistics                 |                               |
+|          | PH002  -   Introduction to digital circuit            |                               |
+|          | SS004  -   Professional skills                        | [`SS004.10`](https://github.com/hamstrous/SS004.10) *(submodule)*                             |
+| [HK3](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK3) | IT003     -   Data Structures & Algorithms   | [`HK3_DSA`](https://github.com/VuDaiDuong-23520359/HK3_DSA) *(submodule)* |
+|          | IT004  -   Structured Query Language                  |                               |
+|          | IT005  -   Introduction to computer networks          |                               |
+|          | IT006  -   Computer Architecture                      |                               |
+|          | SS006  -   Introduction to law                        |                               |
+|          | SS009  -   Scientific Socialism                       |                               |
+|          | SS010  -   History of Vietnamese communist party      |                               |
+| [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103    -   Microprocessors & microcontrollers      | [`MPU-MCU_project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project) *(submodule)* |
+|          | CE122  -   Engineering Circuit Analysis               |                               |
+|          | IT007  -   Operating Systems                          | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
+|          | SS008  -   Marxism–Leninism political economy         |                               |
 
 ---
 
@@ -36,6 +36,10 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 | Course Code | Course Name                               | Tools Used |
 |-------------|--------------------------------------------|------------|
+| IT001       | Introduction to programming                | CodeBlock, VS, VSCode |
+| IT002       | Object-oriented programming (OOP)          | VS, VSCode |
+| PH002       | Introduction to digital circuit            | Quartus |
+| SS004       | Professional skills                        | VS, VSCode |
 | IT003       | Data Structures & Algorithms (DSA)         | VS, VSCode |
 | IT004       | Structured Query Language (SQL)            | SQL Server |
 | IT005       | Intro to Computer Networks                 | Wireshark, Charles, curl, Packet Tracer, VirtualBox |
