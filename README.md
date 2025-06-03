@@ -42,7 +42,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | SS004       | Professional skills                        | VS, VSCode |
 | IT003       | Data Structures & Algorithms (DSA)         | VS, VSCode |
 | IT004       | Structured Query Language (SQL)            | SQL Server |
-| IT005       | Intro to Computer Networks                 | Wireshark, Charles, curl, Packet Tracer, VirtualBox |
+| IT005       | Introduction to Computer Networks          | Wireshark, Charles, curl, Packet Tracer, VirtualBox |
 | IT006       | Computer Architecture                      | MARS |
 | CE103       | Microprocessors & Microcontrollers         | Proteus, ASM 8086 Emulator, STM32CubeIDE/MX |
 | CE122       | Engineering Circuit Analysis               | Proteus, LTSpice |
