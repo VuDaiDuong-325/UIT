@@ -29,32 +29,6 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | CE122  -   Engineering Circuit Analysis               |                               |
 |          | IT007  -   Operating Systems                          | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
 |          | SS008  -   Marxism–Leninism political economy         |                               |
-
-```
-📁 UIT/
-├── 📂 HK1/
-│ ├── 📄 CE005_Intro_Computer_Eng/
-│ ├── 📄 IT001_Intro_Programming/
-│ ├── 📄 MA003_Linear_Algebra/
-│ └── ...
-├── 📂 HK2/
-│ ├── 📄 IT002_OOP/
-│ ├── 📄 MA004_Discrete_Structures/
-│ ├── 📄 PH002_Digital_Circuit/
-│ └── 🔗 SS004_Professional_Skills/ (submodule)
-├── 📂 HK3/
-│ ├── 🔗 IT003_DSA/ (submodule: HK3_DSA)
-│ ├── 📄 IT004_SQL/
-│ ├── 📄 IT005_Computer_Networks/
-│ └── ...
-├── 📂 HK4/
-│ ├── 🔗 CE103_Microcontrollers/ (submodule: MPU-MCU_project)
-│ ├── 📄 CE122_Circuit_Analysis/
-│ └── 🔗 IT007_OS/ (submodule: OS_ubuntu)
-├── ⚙️ .gitignore
-├── ⚙️ .gitattributes
-└── ⚙️ .gitmodules
-```
 ---
 
 ## 💻 Course Tools Used
