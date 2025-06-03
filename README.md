@@ -8,6 +8,16 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 | Semester | Course                                 | Linked Folder                 |
 |----------|----------------------------------------|-------------------------------|
+| [HK1](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK1)         | CE005 - Introduction to Computer Engineering                |                               |
+|          | IT001 - Introduction to programming                |                               |
+|          | MA003 - Linear algebra                             |                               |
+|          | MA006 - Calculus                                   |                               |
+|          | SS007 - 	Philosophy Marx - Lenin                 |                               |
+| [HK2](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK2)         | IT002 - Object-oriented programming                         |                               |
+|          | MA004 - Discrete structures                        |                               |
+|          | MA005 - Probability and statistics                 |                               |
+|          | PH002 - Introduction to digital circuit            |                               |
+|          | SS004 - Professional skills                        | [`SS004.10`](https://github.com/hamstrous/SS004.10) *(submodule)*                             |
 | [HK3](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK3) | IT003 - Data Structures & Algorithms   | [`HK3_DSA`](https://github.com/VuDaiDuong-23520359/HK3_DSA) *(submodule)* |
 |          | IT004 - Structured Query Language                  |                               |
 |          | IT005 - Introduction to computer networks          |                               |
