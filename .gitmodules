@@ -7,3 +7,6 @@
 [submodule "HK4/IT007_HDH"]
 	path = HK4/IT007_HDH
 	url = https://github.com/VuDaiDuong-23520359/OS_ubuntu.git
+[submodule "HK2/SS004_KNNN"]
+	path = HK2/SS004_KNNN
+	url = https://github.com/hamstrous/SS004.10
