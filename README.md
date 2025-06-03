@@ -30,6 +30,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | IT007  -   Operating Systems                          | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
 |          | SS008  -   Marxism–Leninism political economy         |                               |
 
+```
 UIT/
 ├── HK1/
 │ ├── CE005_Intro_Computer_Eng/
@@ -54,6 +55,7 @@ UIT/
 ├── .gitignore
 ├── .gitattributes
 └── .gitmodules
+```
 ---
 
 ## 💻 Course Tools Used
