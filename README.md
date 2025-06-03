@@ -4,7 +4,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 ---
 
-## 📁 Directory Structure
+## 📁 Course List & Directory Structure
 
 | Semester | Course                                 | Linked Folder                 |
 |----------|----------------------------------------|-------------------------------|
@@ -36,7 +36,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 
 | Course Code | Course Name                               | Tools Used |
 |-------------|--------------------------------------------|------------|
-| IT001       | Introduction to programming                | CodeBlock, VS, VSCode |
+| IT001       | Introduction to programming                | Code::Blocks, VS, VSCode |
 | IT002       | Object-oriented programming (OOP)          | VS, VSCode |
 | PH002       | Introduction to digital circuit            | Quartus |
 | SS004       | Professional skills                        | VS, VSCode |
