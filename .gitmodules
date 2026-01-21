@@ -14,3 +14,5 @@
 	path = HK2/SS004_KNNN
 	url = https://github.com/hamstrous/SS004.10.git
 	branch = main
+[submodule "HK4/IT003_DSA/Thuc_hanh"]
+	branch = main
