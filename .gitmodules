@@ -1,12 +1,12 @@
 [submodule "HK3/IT003_DSA/Thuc_hanh"]
 	path = HK3/IT003_DSA/Thuc_hanh
-	url = https://github.com/VuDaiDuong-325/Data-Structures-and-Algorithms-Learning.git
+	url = https://github.com/VuDaiDuong-325/Data-Structures-and-Algorithms-Learning/tree/main.git
 [submodule "HK4/CE103_Vxl-vdk/Project"]
 	path = HK4/CE103_Vxl-vdk/Project
-	url = https://github.com/VuDaiDuong-325/Controlling-WS2812b-using-STM32.git
+	url = https://github.com/VuDaiDuong-325/Controlling-WS2812b-using-STM32/tree/DesktopUIT.git
 [submodule "HK4/IT007_HDH"]
 	path = HK4/IT007_HDH
-	url = https://github.com/VuDaiDuong-325/Operating-System-Learning.git
+	url = https://github.com/VuDaiDuong-325/Operating-System-Learning/tree/DesktopUIT.git
 [submodule "HK2/SS004_KNNN"]
 	path = HK2/SS004_KNNN
-	url = https://github.com/hamstrous/SS004.10
+	url = https://github.com/hamstrous/SS004.10/tree/main.git
