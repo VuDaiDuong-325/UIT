@@ -16,3 +16,9 @@
 	branch = main
 [submodule "HK4/IT003_DSA/Thuc_hanh"]
 	branch = main
+[submodule "HK5/CE118_DigitalLogicDesign/Project"]
+	path = HK5/CE118_DigitalLogicDesign/Project
+	url = https://github.com/VuDaiDuong-325/Circuit-Simulation-in-Digital-Logic-Design-Learning.git
+[submodule "HK5/CE224_EmbeddedSystemDesign/Project"]
+	path = HK5/CE224_EmbeddedSystemDesign/Project
+	url = https://github.com/DuyNDP/CE224_Control_Led_APA102.git
