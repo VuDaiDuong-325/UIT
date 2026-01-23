@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="MIPS">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_final|ALU:inst8|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_9oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_final|BUSMUX:inst4|lpm_mux:$00000" CBX_FILE_NAME="mux_9oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_final|BUSMUX:inst5|lpm_mux:$00000" CBX_FILE_NAME="mux_9oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Top_final|BUSMUX:inst7|lpm_mux:$00000" CBX_FILE_NAME="mux_pmc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

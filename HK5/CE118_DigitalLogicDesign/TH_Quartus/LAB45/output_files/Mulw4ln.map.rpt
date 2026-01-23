@@ -1,0 +1,531 @@
+Analysis & Synthesis report for Mulw4ln
+Thu Dec 11 14:51:01 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Dec 11 14:51:01 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Mulw4ln                                         ;
+; Top-level Entity Name              ; Mulw4ln                                         ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 172                                             ;
+;     Total combinational functions  ; 156                                             ;
+;     Dedicated logic registers      ; 28                                              ;
+; Total registers                    ; 28                                              ;
+; Total pins                         ; 28                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; Mulw4ln            ; Mulw4ln            ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++-----------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                    ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
++-----------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+; ../../../../Quartus_Block/Mux/MUX21/4mux21.bdf      ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus_Block/Mux/MUX21/4mux21.bdf                                    ;         ;
+; Datapath.bdf                                        ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/Datapath.bdf            ;         ;
+; ../../../../Quartus_Block/Mux/MUX21/8mux21.bdf      ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus_Block/Mux/MUX21/8mux21.bdf                                    ;         ;
+; ../../CircuitDesign/SRA/Sub8S.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/SRA/Sub8S.bdf              ;         ;
+; ../../CircuitDesign/SRA/Adder8S.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/SRA/Adder8S.bdf            ;         ;
+; ../../CircuitDesign/SRA/Adder8.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/SRA/Adder8.bdf             ;         ;
+; ../../CircuitDesign/SRA/Adder4S.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/SRA/Adder4S.bdf            ;         ;
+; ../../CircuitDesign/OperatorMerging/8mux41.bdf      ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/CircuitDesign/OperatorMerging/8mux41.bdf ;         ;
+; ../../../../Quartus_Block/AU/Adder/FullAdder/HA.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus_Block/AU/Adder/FullAdder/HA.bdf                               ;         ;
+; ../../../../Quartus_Block/AU/Adder/FullAdder/FA.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/Quartus_Block/AU/Adder/FullAdder/FA.bdf                               ;         ;
+; RFC1.bdf                                            ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/RFC1.bdf                ;         ;
+; ShiftLeft.bdf                                       ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/ShiftLeft.bdf           ;         ;
+; RF.bdf                                              ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/RF.bdf                  ;         ;
+; Decoder2to4.v                                       ; yes             ; User Verilog HDL File              ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/Decoder2to4.v           ;         ;
+; RegisterFile.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/RegisterFile.bdf        ;         ;
+; ShiftLeft1_8.v                                      ; yes             ; User Verilog HDL File              ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/ShiftLeft1_8.v          ;         ;
+; ShiftLeft2_8.v                                      ; yes             ; User Verilog HDL File              ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/ShiftLeft2_8.v          ;         ;
+; ShiftLeft3_8.v                                      ; yes             ; User Verilog HDL File              ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/ShiftLeft3_8.v          ;         ;
+; AU.bdf                                              ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/AU.bdf                  ;         ;
+; NextStateLogic.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/NextStateLogic.bdf      ;         ;
+; DFFs.bdf                                            ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/DFFs.bdf                ;         ;
+; OutputLogic.bdf                                     ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/OutputLogic.bdf         ;         ;
+; Controller.bdf                                      ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/Controller.bdf          ;         ;
+; Mulw4ln.bdf                                         ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/Mulw4ln.bdf             ;         ;
+; RF8.bdf                                             ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/RF8.bdf                 ;         ;
+; Adder4.bdf                                          ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/Adder4.bdf              ;         ;
+; Comparator4.bdf                                     ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/Comparator4.bdf         ;         ;
+; ComparativeAdder4.bdf                               ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/ComparativeAdder4.bdf   ;         ;
+; DD8.bdf                                             ; yes             ; User Block Diagram/Schematic File  ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB45/DD8.bdf                 ;         ;
+; 21mux.bdf                                           ; yes             ; Megafunction                       ; d:/apps/study/quartus/quartus/libraries/others/maxplus2/21mux.bdf        ;         ;
+; 7447.bdf                                            ; yes             ; Megafunction                       ; d:/apps/study/quartus/quartus/libraries/others/maxplus2/7447.bdf         ;         ;
++-----------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                      ;
++---------------------------------------------+------------------------------------+
+; Resource                                    ; Usage                              ;
++---------------------------------------------+------------------------------------+
+; Estimated Total logic elements              ; 172                                ;
+;                                             ;                                    ;
+; Total combinational functions               ; 156                                ;
+; Logic element usage by number of LUT inputs ;                                    ;
+;     -- 4 input functions                    ; 112                                ;
+;     -- 3 input functions                    ; 29                                 ;
+;     -- <=2 input functions                  ; 15                                 ;
+;                                             ;                                    ;
+; Logic elements by mode                      ;                                    ;
+;     -- normal mode                          ; 156                                ;
+;     -- arithmetic mode                      ; 0                                  ;
+;                                             ;                                    ;
+; Total registers                             ; 28                                 ;
+;     -- Dedicated logic registers            ; 28                                 ;
+;     -- I/O registers                        ; 0                                  ;
+;                                             ;                                    ;
+; I/O pins                                    ; 28                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                                  ;
+; Maximum fan-out node                        ; Controller:inst|DFFs:inst1|inst[0] ;
+; Maximum fan-out                             ; 36                                 ;
+; Total fan-out                               ; 666                                ;
+; Average fan-out                             ; 3.14                               ;
++---------------------------------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+; |Mulw4ln                        ; 156 (0)           ; 28 (0)       ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |Mulw4ln                                                                                   ; work         ;
+;    |Controller:inst|            ; 13 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Controller:inst                                                                   ; work         ;
+;       |DFFs:inst1|              ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Controller:inst|DFFs:inst1                                                        ; work         ;
+;       |NextStateLogic:inst|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Controller:inst|NextStateLogic:inst                                               ; work         ;
+;       |OutputLogic:inst2|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Controller:inst|OutputLogic:inst2                                                 ; work         ;
+;    |DD8:inst2|                  ; 42 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2                                                                         ; work         ;
+;       |7447:inst7|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|7447:inst7                                                              ; work         ;
+;       |7447:inst8|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|7447:inst8                                                              ; work         ;
+;       |7447:inst9|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|7447:inst9                                                              ; work         ;
+;       |ComparativeAdder4:inst1| ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst1                                                 ; work         ;
+;          |4mux21:inst3|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst1|4mux21:inst3                                    ; work         ;
+;       |ComparativeAdder4:inst2| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst2                                                 ; work         ;
+;          |4mux21:inst3|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst2|4mux21:inst3                                    ; work         ;
+;       |ComparativeAdder4:inst3| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst3                                                 ; work         ;
+;          |4mux21:inst3|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst3|4mux21:inst3                                    ; work         ;
+;       |ComparativeAdder4:inst4| ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst4                                                 ; work         ;
+;          |Comparator4:inst1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst4|Comparator4:inst1                               ; work         ;
+;       |ComparativeAdder4:inst5| ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst5                                                 ; work         ;
+;          |4mux21:inst3|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst5|4mux21:inst3                                    ; work         ;
+;          |Comparator4:inst1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst5|Comparator4:inst1                               ; work         ;
+;       |ComparativeAdder4:inst6| ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst6                                                 ; work         ;
+;          |4mux21:inst3|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst6|4mux21:inst3                                    ; work         ;
+;       |ComparativeAdder4:inst|  ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst                                                  ; work         ;
+;          |Comparator4:inst1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|DD8:inst2|ComparativeAdder4:inst|Comparator4:inst1                                ; work         ;
+;    |Datapath:inst1|             ; 101 (0)           ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1                                                                    ; work         ;
+;       |8mux21:inst1|            ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|8mux21:inst1                                                       ; work         ;
+;       |AU:inst2|                ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2                                                           ; work         ;
+;          |8mux21:inst2|         ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|8mux21:inst2                                              ; work         ;
+;          |Adder8S:inst|         ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst                                              ; work         ;
+;             |Adder8:inst|       ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst                                  ; work         ;
+;                |Adder4S:inst3|  ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3                    ; work         ;
+;                   |FA:inst17|   ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17          ; work         ;
+;                      |HA:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1 ; work         ;
+;                   |FA:inst19|   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19          ; work         ;
+;                      |HA:inst1| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1 ; work         ;
+;                   |FA:inst|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst            ; work         ;
+;                |Adder4S:inst|   ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst                     ; work         ;
+;                   |FA:inst17|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst|FA:inst17           ; work         ;
+;                   |FA:inst18|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst|FA:inst18           ; work         ;
+;                   |FA:inst19|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst|FA:inst19           ; work         ;
+;                   |FA:inst|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst|FA:inst             ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst|FA:inst|HA:inst     ; work         ;
+;          |Sub8S:inst1|          ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1                                               ; work         ;
+;             |Adder8:inst|       ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst                                   ; work         ;
+;                |Adder4S:inst3|  ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3                     ; work         ;
+;                   |FA:inst17|   ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst17           ; work         ;
+;                      |HA:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst17|HA:inst1  ; work         ;
+;                   |FA:inst18|   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst18           ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst18|HA:inst   ; work         ;
+;                   |FA:inst19|   ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst19           ; work         ;
+;                      |HA:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1  ; work         ;
+;                   |FA:inst|     ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst             ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst3|FA:inst|HA:inst     ; work         ;
+;                |Adder4S:inst|   ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst                      ; work         ;
+;                   |FA:inst17|   ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst17            ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst17|HA:inst    ; work         ;
+;                   |FA:inst18|   ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst18            ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst18|HA:inst    ; work         ;
+;                   |FA:inst19|   ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst19            ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst19|HA:inst    ; work         ;
+;                   |FA:inst|     ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst              ; work         ;
+;                      |HA:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|AU:inst2|Sub8S:inst1|Adder8:inst|Adder4S:inst|FA:inst|HA:inst      ; work         ;
+;       |RegisterFile:inst|       ; 39 (0)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst                                                  ; work         ;
+;          |Decoder2to4:inst1|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|Decoder2to4:inst1                                ; work         ;
+;          |Decoder2to4:inst2|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|Decoder2to4:inst2                                ; work         ;
+;          |Decoder2to4:inst3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|Decoder2to4:inst3                                ; work         ;
+;          |RF:inst|              ; 32 (32)           ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst                                          ; work         ;
+;             |RF8:inst5|         ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5                                ; work         ;
+;                |RFC1:inst1|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst1                     ; work         ;
+;                |RFC1:inst2|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst2                     ; work         ;
+;                |RFC1:inst3|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst3                     ; work         ;
+;                |RFC1:inst4|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst4                     ; work         ;
+;                |RFC1:inst5|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst5                     ; work         ;
+;                |RFC1:inst6|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst6                     ; work         ;
+;                |RFC1:inst7|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst7                     ; work         ;
+;                |RFC1:inst|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst5|RFC1:inst                      ; work         ;
+;             |RF8:inst6|         ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6                                ; work         ;
+;                |RFC1:inst1|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst1                     ; work         ;
+;                |RFC1:inst2|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst2                     ; work         ;
+;                |RFC1:inst3|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst3                     ; work         ;
+;                |RFC1:inst4|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst4                     ; work         ;
+;                |RFC1:inst5|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst5                     ; work         ;
+;                |RFC1:inst6|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst6                     ; work         ;
+;                |RFC1:inst7|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst7                     ; work         ;
+;                |RFC1:inst|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst6|RFC1:inst                      ; work         ;
+;             |RF8:inst7|         ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7                                ; work         ;
+;                |RFC1:inst1|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst1                     ; work         ;
+;                |RFC1:inst2|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst2                     ; work         ;
+;                |RFC1:inst3|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst3                     ; work         ;
+;                |RFC1:inst4|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst4                     ; work         ;
+;                |RFC1:inst5|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst5                     ; work         ;
+;                |RFC1:inst6|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst6                     ; work         ;
+;                |RFC1:inst7|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst7                     ; work         ;
+;                |RFC1:inst|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst                      ; work         ;
+;       |ShiftLeft:inst5|         ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|ShiftLeft:inst5                                                    ; work         ;
+;          |8mux41:inst3|         ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mulw4ln|Datapath:inst1|ShiftLeft:inst5|8mux41:inst3                                       ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                  ;
++--------------------------------------------------------------------+--------------------------------------------------------------------------------+
+; Register name                                                      ; Reason for Removal                                                             ;
++--------------------------------------------------------------------+--------------------------------------------------------------------------------+
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst5|inst4 ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst|inst4  ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst6|inst4 ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst4|inst4 ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst2|inst4 ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst3|inst4 ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst1|inst4 ; Merged with Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ;
+; Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst|RFC1:inst7|inst4 ; Stuck at GND due to stuck port data_in                                         ;
+; Total Number of Removed Registers = 8                              ;                                                                                ;
++--------------------------------------------------------------------+--------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 28    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|OA[5] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Mulw4ln|Datapath:inst1|RegisterFile:inst|RF:inst|OB[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Dec 11 14:50:52 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mulw4ln -c Mulw4ln
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_block/mux/mux21/4mux21.bdf
+    Info (12023): Found entity 1: 4mux21
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.bdf
+    Info (12023): Found entity 1: Datapath
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_block/mux/mux21/8mux21.bdf
+    Info (12023): Found entity 1: 8mux21
+Info (12021): Found 1 design units, including 1 entities, in source file /hk5/ce118_digitallogicdesign/circuitdesign/sra/sub8s.bdf
+    Info (12023): Found entity 1: Sub8S
+Info (12021): Found 1 design units, including 1 entities, in source file /hk5/ce118_digitallogicdesign/circuitdesign/sra/adder8s.bdf
+    Info (12023): Found entity 1: Adder8S
+Info (12021): Found 1 design units, including 1 entities, in source file /hk5/ce118_digitallogicdesign/circuitdesign/sra/adder8.bdf
+    Info (12023): Found entity 1: Adder8
+Info (12021): Found 1 design units, including 1 entities, in source file /hk5/ce118_digitallogicdesign/circuitdesign/sra/adder4s.bdf
+    Info (12023): Found entity 1: Adder4S
+Info (12021): Found 1 design units, including 1 entities, in source file /hk5/ce118_digitallogicdesign/circuitdesign/operatormerging/8mux41.bdf
+    Info (12023): Found entity 1: 8mux41
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_block/au/adder/fulladder/ha.bdf
+    Info (12023): Found entity 1: HA
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_block/au/adder/fulladder/fa.bdf
+    Info (12023): Found entity 1: FA
+Info (12021): Found 1 design units, including 1 entities, in source file register4.bdf
+    Info (12023): Found entity 1: Register4
+Info (12021): Found 1 design units, including 1 entities, in source file 4to16.bdf
+    Info (12023): Found entity 1: 4to16
+Info (12021): Found 1 design units, including 1 entities, in source file 4to16f4.bdf
+    Info (12023): Found entity 1: 4to16f4
+Info (12021): Found 1 design units, including 1 entities, in source file rfc1.bdf
+    Info (12023): Found entity 1: RFC1
+Info (12021): Found 1 design units, including 1 entities, in source file register16.bdf
+    Info (12023): Found entity 1: Register16
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft.bdf
+    Info (12023): Found entity 1: ShiftLeft
+Info (12021): Found 1 design units, including 1 entities, in source file rf.bdf
+    Info (12023): Found entity 1: RF
+Info (12021): Found 1 design units, including 1 entities, in source file decoder2to4.v
+    Info (12023): Found entity 1: Decoder2to4
+Info (12021): Found 1 design units, including 1 entities, in source file registerfile.bdf
+    Info (12023): Found entity 1: RegisterFile
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft1_8.v
+    Info (12023): Found entity 1: ShiftLeft1_8
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2_8.v
+    Info (12023): Found entity 1: ShiftLeft2_8
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft3_8.v
+    Info (12023): Found entity 1: ShiftLeft3_8
+Info (12021): Found 1 design units, including 1 entities, in source file au.bdf
+    Info (12023): Found entity 1: AU
+Info (12021): Found 1 design units, including 1 entities, in source file nextstatelogic.bdf
+    Info (12023): Found entity 1: NextStateLogic
+Info (12021): Found 1 design units, including 1 entities, in source file dffs.bdf
+    Info (12023): Found entity 1: DFFs
+Info (12021): Found 1 design units, including 1 entities, in source file outputlogic.bdf
+    Info (12023): Found entity 1: OutputLogic
+Info (12021): Found 1 design units, including 1 entities, in source file controller.bdf
+    Info (12023): Found entity 1: Controller
+Info (12021): Found 1 design units, including 1 entities, in source file mulw4ln.bdf
+    Info (12023): Found entity 1: Mulw4ln
+Info (12021): Found 1 design units, including 1 entities, in source file rf8.bdf
+    Info (12023): Found entity 1: RF8
+Info (12021): Found 1 design units, including 1 entities, in source file adder4.bdf
+    Info (12023): Found entity 1: Adder4
+Info (12021): Found 1 design units, including 1 entities, in source file comparator4.bdf
+    Info (12023): Found entity 1: Comparator4
+Info (12021): Found 1 design units, including 1 entities, in source file comparativeadder4.bdf
+    Info (12023): Found entity 1: ComparativeAdder4
+Info (12021): Found 1 design units, including 1 entities, in source file dd8.bdf
+    Info (12023): Found entity 1: DD8
+Info (12127): Elaborating entity "Mulw4ln" for the top level hierarchy
+Info (12128): Elaborating entity "Datapath" for hierarchy "Datapath:inst1"
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "Datapath:inst1|RegisterFile:inst"
+Info (12128): Elaborating entity "RF" for hierarchy "Datapath:inst1|RegisterFile:inst|RF:inst"
+Info (12128): Elaborating entity "RF8" for hierarchy "Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7"
+Info (12128): Elaborating entity "RFC1" for hierarchy "Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst4"
+Info (12128): Elaborating entity "21mux" for hierarchy "Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst4|21mux:inst"
+Info (12130): Elaborated megafunction instantiation "Datapath:inst1|RegisterFile:inst|RF:inst|RF8:inst7|RFC1:inst4|21mux:inst"
+Info (12128): Elaborating entity "Decoder2to4" for hierarchy "Datapath:inst1|RegisterFile:inst|Decoder2to4:inst2"
+Info (12128): Elaborating entity "8mux21" for hierarchy "Datapath:inst1|8mux21:inst1"
+Info (12128): Elaborating entity "AU" for hierarchy "Datapath:inst1|AU:inst2"
+Info (12128): Elaborating entity "Adder8S" for hierarchy "Datapath:inst1|AU:inst2|Adder8S:inst"
+Info (12128): Elaborating entity "Adder8" for hierarchy "Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst"
+Info (12128): Elaborating entity "Adder4S" for hierarchy "Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3"
+Info (12128): Elaborating entity "FA" for hierarchy "Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19"
+Info (12128): Elaborating entity "HA" for hierarchy "Datapath:inst1|AU:inst2|Adder8S:inst|Adder8:inst|Adder4S:inst3|FA:inst19|HA:inst1"
+Info (12128): Elaborating entity "Sub8S" for hierarchy "Datapath:inst1|AU:inst2|Sub8S:inst1"
+Info (12128): Elaborating entity "ShiftLeft" for hierarchy "Datapath:inst1|ShiftLeft:inst5"
+Info (12128): Elaborating entity "8mux41" for hierarchy "Datapath:inst1|ShiftLeft:inst5|8mux41:inst3"
+Info (12128): Elaborating entity "ShiftLeft1_8" for hierarchy "Datapath:inst1|ShiftLeft:inst5|ShiftLeft1_8:inst2"
+Info (12128): Elaborating entity "ShiftLeft2_8" for hierarchy "Datapath:inst1|ShiftLeft:inst5|ShiftLeft2_8:inst1"
+Info (12128): Elaborating entity "ShiftLeft3_8" for hierarchy "Datapath:inst1|ShiftLeft:inst5|ShiftLeft3_8:inst"
+Info (12128): Elaborating entity "Controller" for hierarchy "Controller:inst"
+Info (12128): Elaborating entity "OutputLogic" for hierarchy "Controller:inst|OutputLogic:inst2"
+Info (12128): Elaborating entity "DFFs" for hierarchy "Controller:inst|DFFs:inst1"
+Info (12128): Elaborating entity "NextStateLogic" for hierarchy "Controller:inst|NextStateLogic:inst"
+Info (12128): Elaborating entity "DD8" for hierarchy "DD8:inst2"
+Info (12128): Elaborating entity "7447" for hierarchy "DD8:inst2|7447:inst7"
+Info (12130): Elaborated megafunction instantiation "DD8:inst2|7447:inst7"
+Info (12128): Elaborating entity "ComparativeAdder4" for hierarchy "DD8:inst2|ComparativeAdder4:inst5"
+Info (12128): Elaborating entity "4mux21" for hierarchy "DD8:inst2|ComparativeAdder4:inst5|4mux21:inst3"
+Info (12128): Elaborating entity "Comparator4" for hierarchy "DD8:inst2|ComparativeAdder4:inst5|Comparator4:inst1"
+Info (12128): Elaborating entity "Adder4" for hierarchy "DD8:inst2|ComparativeAdder4:inst5|Adder4:inst"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Datapath:inst1|inst6[0]" feeding internal logic into a wire
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[7]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[6]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[5]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[4]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[3]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[2]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[1]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OA[0]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[7]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[6]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[5]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[4]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[3]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[2]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[1]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:inst1|RegisterFile:inst|RF:inst|OB[0]" into a selector
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "B2" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 208 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 180 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4604 megabytes
+    Info: Processing ended: Thu Dec 11 14:51:01 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:05
+
+

@@ -1,0 +1,15 @@
+Enable clock -> Setting counter clock freq -> setting for counter (TIMx_ARR, TIMX_CRx, TIMx_CNT) -> enable time interrupt (TIMx_DIER) -> start timer
+
+Setting counter count from 0
+Start counter:
+	for (unsigned int i = 0; i < 0x3FFFFF; i++); => assembly
+
+get CNT = > tick
+unsigned int time = tick * (10^6/Fcounter) 
+
+Blink LED per 500ms using pooling & interrupt technique
+Simulate watcher: hh:mm:ss
+
+- Using interrupt techni => Enable TIMx_DIER
+
+NVIC (Module of core): Nested vector interrupt controller

@@ -1,0 +1,80 @@
+|DongBo
+O3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+I1 => counter:inst.I1
+I0 => counter:inst.I0
+I2 => counter:inst.I2
+Select => counter:inst.Select
+CLK => counter:inst.CLK
+O2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+O1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+O0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+A <= 7447:inst15.OA
+B <= 7447:inst15.OB
+C <= 7447:inst15.OC
+D <= 7447:inst15.OD
+E <= 7447:inst15.OE
+F <= 7447:inst15.OF
+G <= 7447:inst15.OG
+
+
+|DongBo|counter:inst
+Q2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+Select => 21mux:inst19.S
+Select => 21mux:inst20.S
+Select => 21mux:inst21.S
+I0 => 21mux:inst21.A
+I1 => 21mux:inst20.A
+I2 => 21mux:inst19.A
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DongBo|counter:inst|21mux:inst19
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|DongBo|counter:inst|21mux:inst20
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|DongBo|counter:inst|21mux:inst21
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|DongBo|7447:inst15
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+

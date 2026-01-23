@@ -1,0 +1,620 @@
+Simulator report for Mw9
+Thu Nov 20 21:06:21 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 560.0 ns     ;
+; Simulation Netlist Size     ; 348 nodes    ;
+; Simulation Coverage         ;      63.51 % ;
+; Total Number of Transitions ; 1433         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                ;               ;
+; Vector input source                                                                        ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB3/Multiple/Mw9wf.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                 ; On            ;
+; Check outputs                                                                              ; Off                                                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                ; Off           ;
+; Detect glitches                                                                            ; Off                                                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      63.51 % ;
+; Total nodes checked                                 ; 348          ;
+; Total output ports checked                          ; 348          ;
+; Total output ports with complete 1/0-value coverage ; 221          ;
+; Total output ports with no 1/0-value coverage       ; 101          ;
+; Total output ports with no 1-value coverage         ; 110          ;
+; Total output ports with no 0-value coverage         ; 118          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                            ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |Mw9|A1                                                                          ; |Mw9|A1                                                                          ; pin_out          ;
+; |Mw9|R[7]                                                                        ; |Mw9|R[7]                                                                        ; pin_out          ;
+; |Mw9|R[6]                                                                        ; |Mw9|R[6]                                                                        ; pin_out          ;
+; |Mw9|R[5]                                                                        ; |Mw9|R[5]                                                                        ; pin_out          ;
+; |Mw9|R[4]                                                                        ; |Mw9|R[4]                                                                        ; pin_out          ;
+; |Mw9|R[3]                                                                        ; |Mw9|R[3]                                                                        ; pin_out          ;
+; |Mw9|R[2]                                                                        ; |Mw9|R[2]                                                                        ; pin_out          ;
+; |Mw9|R[1]                                                                        ; |Mw9|R[1]                                                                        ; pin_out          ;
+; |Mw9|R[0]                                                                        ; |Mw9|R[0]                                                                        ; pin_out          ;
+; |Mw9|CLK                                                                         ; |Mw9|CLK                                                                         ; out              ;
+; |Mw9|B1                                                                          ; |Mw9|B1                                                                          ; pin_out          ;
+; |Mw9|C1                                                                          ; |Mw9|C1                                                                          ; pin_out          ;
+; |Mw9|D1                                                                          ; |Mw9|D1                                                                          ; pin_out          ;
+; |Mw9|E1                                                                          ; |Mw9|E1                                                                          ; pin_out          ;
+; |Mw9|F1                                                                          ; |Mw9|F1                                                                          ; pin_out          ;
+; |Mw9|G1                                                                          ; |Mw9|G1                                                                          ; pin_out          ;
+; |Mw9|A2                                                                          ; |Mw9|A2                                                                          ; pin_out          ;
+; |Mw9|B2                                                                          ; |Mw9|B2                                                                          ; pin_out          ;
+; |Mw9|C2                                                                          ; |Mw9|C2                                                                          ; pin_out          ;
+; |Mw9|D2                                                                          ; |Mw9|D2                                                                          ; pin_out          ;
+; |Mw9|E2                                                                          ; |Mw9|E2                                                                          ; pin_out          ;
+; |Mw9|7447:inst5|85                                                               ; |Mw9|7447:inst5|85                                                               ; out0             ;
+; |Mw9|7447:inst5|32                                                               ; |Mw9|7447:inst5|32                                                               ; out0             ;
+; |Mw9|7447:inst5|84                                                               ; |Mw9|7447:inst5|84                                                               ; out0             ;
+; |Mw9|7447:inst5|5                                                                ; |Mw9|7447:inst5|5                                                                ; out0             ;
+; |Mw9|7447:inst5|4                                                                ; |Mw9|7447:inst5|4                                                                ; out0             ;
+; |Mw9|7447:inst5|83                                                               ; |Mw9|7447:inst5|83                                                               ; out0             ;
+; |Mw9|7447:inst5|33                                                               ; |Mw9|7447:inst5|33                                                               ; out0             ;
+; |Mw9|7447:inst5|82                                                               ; |Mw9|7447:inst5|82                                                               ; out0             ;
+; |Mw9|7447:inst5|7                                                                ; |Mw9|7447:inst5|7                                                                ; out0             ;
+; |Mw9|7447:inst5|81                                                               ; |Mw9|7447:inst5|81                                                               ; out0             ;
+; |Mw9|7447:inst5|35                                                               ; |Mw9|7447:inst5|35                                                               ; out0             ;
+; |Mw9|Plus8s:inst2|inst2                                                          ; |Mw9|Plus8s:inst2|inst2                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst10                                                         ; |Mw9|Plus8s:inst2|inst10                                                         ; regout           ;
+; |Mw9|Plus8s:inst2|inst11                                                         ; |Mw9|Plus8s:inst2|inst11                                                         ; regout           ;
+; |Mw9|Plus8s:inst2|inst12                                                         ; |Mw9|Plus8s:inst2|inst12                                                         ; regout           ;
+; |Mw9|Plus8s:inst2|4mux21:inst7|inst[3]                                           ; |Mw9|Plus8s:inst2|4mux21:inst7|inst[3]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|4mux21:inst7|inst[2]                                           ; |Mw9|Plus8s:inst2|4mux21:inst7|inst[2]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|4mux21:inst7|inst[1]                                           ; |Mw9|Plus8s:inst2|4mux21:inst7|inst[1]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|4mux21:inst7|inst[0]                                           ; |Mw9|Plus8s:inst2|4mux21:inst7|inst[0]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[7]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[7]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[6]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[6]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[5]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[5]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[4]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[4]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[3]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[3]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst|HA:inst|inst                   ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst|HA:inst|inst                   ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst|inst                 ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst|inst                 ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst1|inst                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst1|inst                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst|inst                 ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst|inst                 ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst1|inst                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst1|inst                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|inst2                        ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|inst2                        ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst|inst                 ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst|inst                 ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst|inst1                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst|inst1                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst1|inst                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst1|inst                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst|HA:inst1|inst                 ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst|HA:inst1|inst                 ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst|HA:inst1|inst1                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst|HA:inst1|inst1                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst17|HA:inst1|inst               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst17|HA:inst1|inst               ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst17|HA:inst1|inst1              ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst17|HA:inst1|inst1              ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst18|HA:inst1|inst               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst18|HA:inst1|inst               ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst18|HA:inst1|inst1              ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst18|HA:inst1|inst1              ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst19|HA:inst1|inst               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst1|FA:inst19|HA:inst1|inst               ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|inst3                                                   ; |Mw9|8sl:inst|Left:inst3|inst3                                                   ; regout           ;
+; |Mw9|8sl:inst|Left:inst3|inst2                                                   ; |Mw9|8sl:inst|Left:inst3|inst2                                                   ; regout           ;
+; |Mw9|8sl:inst|Left:inst3|inst1                                                   ; |Mw9|8sl:inst|Left:inst3|inst1                                                   ; regout           ;
+; |Mw9|8sl:inst|Left:inst3|inst                                                    ; |Mw9|8sl:inst|Left:inst3|inst                                                    ; regout           ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst4|6                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst4|6                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst5|6                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst5|6                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst6|6                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst6|6                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst|inst3                                                    ; |Mw9|8sl:inst|Left:inst|inst3                                                    ; regout           ;
+; |Mw9|8sl:inst|Left:inst|inst2                                                    ; |Mw9|8sl:inst|Left:inst|inst2                                                    ; regout           ;
+; |Mw9|8sl:inst|Left:inst|inst1                                                    ; |Mw9|8sl:inst|Left:inst|inst1                                                    ; regout           ;
+; |Mw9|8sl:inst|Left:inst|inst                                                     ; |Mw9|8sl:inst|Left:inst|inst                                                     ; regout           ;
+; |Mw9|8sl:inst|Left:inst|21mux:inst4|6                                            ; |Mw9|8sl:inst|Left:inst|21mux:inst4|6                                            ; out0             ;
+; |Mw9|8sl:inst|Left:inst|21mux:inst5|6                                            ; |Mw9|8sl:inst|Left:inst|21mux:inst5|6                                            ; out0             ;
+; |Mw9|8sl:inst|Left:inst|21mux:inst6|6                                            ; |Mw9|8sl:inst|Left:inst|21mux:inst6|6                                            ; out0             ;
+; |Mw9|8sl:inst|Left:inst|21mux:inst7|6                                            ; |Mw9|8sl:inst|Left:inst|21mux:inst7|6                                            ; out0             ;
+; |Mw9|DCfSL:inst1|inst1                                                           ; |Mw9|DCfSL:inst1|inst1                                                           ; out0             ;
+; |Mw9|DCfSL:inst1|4Equal:inst|inst                                                ; |Mw9|DCfSL:inst1|4Equal:inst|inst                                                ; out0             ;
+; |Mw9|DCfSL:inst1|4Equal:inst|inst1                                               ; |Mw9|DCfSL:inst1|4Equal:inst|inst1                                               ; out0             ;
+; |Mw9|DCfSL:inst1|4Equal:inst|inst2                                               ; |Mw9|DCfSL:inst1|4Equal:inst|inst2                                               ; out0             ;
+; |Mw9|DCfSL:inst1|4Equal:inst|inst3                                               ; |Mw9|DCfSL:inst1|4Equal:inst|inst3                                               ; out0             ;
+; |Mw9|DCfSL:inst1|4Equal:inst|inst4                                               ; |Mw9|DCfSL:inst1|4Equal:inst|inst4                                               ; out0             ;
+; |Mw9|DD:inst3|ControllerDD:inst|inst                                             ; |Mw9|DD:inst3|ControllerDD:inst|inst                                             ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|inst14                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|inst14                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|inst13                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|inst13                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst|HA:inst|inst    ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst|HA:inst|inst    ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst|HA:inst|inst1   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst|HA:inst|inst1   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|inst2          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|inst2          ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst|inst   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst|inst   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst|inst1  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst|inst1  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst1|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst2|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst2|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst2|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst2|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst3|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|FA:inst3|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst3                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst3                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst2                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst2                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst1                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst1                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|inst                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst5|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst6|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst3                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst3                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst2                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst2                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst1                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst1                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst                           ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|inst                           ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|6                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|6                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|3                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|3                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|4                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|4                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst4|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|6                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|6                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|3                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|3                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|4                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|4                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|6                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|6                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|3                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|3                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|4                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|4                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|6                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|6                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|3                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|3                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|4                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|4                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst3                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst3                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst2                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst2                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst1                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst1                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|inst                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst14                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst14                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst13                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst13                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst|HA:inst|inst    ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst|HA:inst|inst    ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst|HA:inst|inst1   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst|HA:inst|inst1   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|inst2          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|inst2          ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst|inst   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst|inst   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst|inst1  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst|inst1  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst1|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst2|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst2|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst2|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst2|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst3|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|FA:inst3|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst3                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst3                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst2                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst2                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst1                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst1                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|inst                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst10                             ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst10                             ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst                               ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst                               ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst~0                             ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst~0                             ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst1                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst1                              ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst1~0                            ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst1~0                            ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst4                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst4                              ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst2                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst2                              ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst2~0                            ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst2~0                            ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst3                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst3                              ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst5                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst5                              ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst5~0                            ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst5~0                            ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst7                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst7                              ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst12                             ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst12                             ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst13                             ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst13                             ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst16                             ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst16                             ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst8                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst8                              ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst20|5                     ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst20|5                     ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst20|6                     ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst20|6                     ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst19|6                     ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst19|6                     ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst11|5                     ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst11|5                     ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst11|6                     ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst11|6                     ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|IsZero:inst9|inst                  ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|IsZero:inst9|inst                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst21|6                     ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|21mux:inst21|6                     ; out0             ;
+; |Mw9|7447:inst4|87                                                               ; |Mw9|7447:inst4|87                                                               ; out0             ;
+; |Mw9|7447:inst4|38                                                               ; |Mw9|7447:inst4|38                                                               ; out0             ;
+; |Mw9|7447:inst4|86                                                               ; |Mw9|7447:inst4|86                                                               ; out0             ;
+; |Mw9|7447:inst4|2                                                                ; |Mw9|7447:inst4|2                                                                ; out0             ;
+; |Mw9|7447:inst4|30                                                               ; |Mw9|7447:inst4|30                                                               ; out0             ;
+; |Mw9|7447:inst4|85                                                               ; |Mw9|7447:inst4|85                                                               ; out0             ;
+; |Mw9|7447:inst4|32                                                               ; |Mw9|7447:inst4|32                                                               ; out0             ;
+; |Mw9|7447:inst4|84                                                               ; |Mw9|7447:inst4|84                                                               ; out0             ;
+; |Mw9|7447:inst4|5                                                                ; |Mw9|7447:inst4|5                                                                ; out0             ;
+; |Mw9|7447:inst4|4                                                                ; |Mw9|7447:inst4|4                                                                ; out0             ;
+; |Mw9|7447:inst4|83                                                               ; |Mw9|7447:inst4|83                                                               ; out0             ;
+; |Mw9|7447:inst4|33                                                               ; |Mw9|7447:inst4|33                                                               ; out0             ;
+; |Mw9|7447:inst4|6                                                                ; |Mw9|7447:inst4|6                                                                ; out0             ;
+; |Mw9|7447:inst4|82                                                               ; |Mw9|7447:inst4|82                                                               ; out0             ;
+; |Mw9|7447:inst4|34                                                               ; |Mw9|7447:inst4|34                                                               ; out0             ;
+; |Mw9|7447:inst4|7                                                                ; |Mw9|7447:inst4|7                                                                ; out0             ;
+; |Mw9|7447:inst4|8                                                                ; |Mw9|7447:inst4|8                                                                ; out0             ;
+; |Mw9|7447:inst4|81                                                               ; |Mw9|7447:inst4|81                                                               ; out0             ;
+; |Mw9|7447:inst4|36                                                               ; |Mw9|7447:inst4|36                                                               ; out0             ;
+; |Mw9|7447:inst4|39                                                               ; |Mw9|7447:inst4|39                                                               ; out0             ;
+; |Mw9|7447:inst4|35                                                               ; |Mw9|7447:inst4|35                                                               ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                               ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |Mw9|R[11]                                                                       ; |Mw9|R[11]                                                                       ; pin_out          ;
+; |Mw9|R[10]                                                                       ; |Mw9|R[10]                                                                       ; pin_out          ;
+; |Mw9|R[9]                                                                        ; |Mw9|R[9]                                                                        ; pin_out          ;
+; |Mw9|I[3]                                                                        ; |Mw9|I[3]                                                                        ; out              ;
+; |Mw9|I[2]                                                                        ; |Mw9|I[2]                                                                        ; out              ;
+; |Mw9|I[1]                                                                        ; |Mw9|I[1]                                                                        ; out              ;
+; |Mw9|I[0]                                                                        ; |Mw9|I[0]                                                                        ; out              ;
+; |Mw9|F2                                                                          ; |Mw9|F2                                                                          ; pin_out          ;
+; |Mw9|G2                                                                          ; |Mw9|G2                                                                          ; pin_out          ;
+; |Mw9|A3                                                                          ; |Mw9|A3                                                                          ; pin_out          ;
+; |Mw9|B3                                                                          ; |Mw9|B3                                                                          ; pin_out          ;
+; |Mw9|C3                                                                          ; |Mw9|C3                                                                          ; pin_out          ;
+; |Mw9|D3                                                                          ; |Mw9|D3                                                                          ; pin_out          ;
+; |Mw9|E3                                                                          ; |Mw9|E3                                                                          ; pin_out          ;
+; |Mw9|F3                                                                          ; |Mw9|F3                                                                          ; pin_out          ;
+; |Mw9|G3                                                                          ; |Mw9|G3                                                                          ; pin_out          ;
+; |Mw9|7447:inst6|87                                                               ; |Mw9|7447:inst6|87                                                               ; out0             ;
+; |Mw9|7447:inst6|1                                                                ; |Mw9|7447:inst6|1                                                                ; out0             ;
+; |Mw9|7447:inst6|38                                                               ; |Mw9|7447:inst6|38                                                               ; out0             ;
+; |Mw9|7447:inst6|86                                                               ; |Mw9|7447:inst6|86                                                               ; out0             ;
+; |Mw9|7447:inst6|31                                                               ; |Mw9|7447:inst6|31                                                               ; out0             ;
+; |Mw9|7447:inst6|2                                                                ; |Mw9|7447:inst6|2                                                                ; out0             ;
+; |Mw9|7447:inst6|30                                                               ; |Mw9|7447:inst6|30                                                               ; out0             ;
+; |Mw9|7447:inst6|85                                                               ; |Mw9|7447:inst6|85                                                               ; out0             ;
+; |Mw9|7447:inst6|32                                                               ; |Mw9|7447:inst6|32                                                               ; out0             ;
+; |Mw9|7447:inst6|84                                                               ; |Mw9|7447:inst6|84                                                               ; out0             ;
+; |Mw9|7447:inst6|5                                                                ; |Mw9|7447:inst6|5                                                                ; out0             ;
+; |Mw9|7447:inst6|3                                                                ; |Mw9|7447:inst6|3                                                                ; out0             ;
+; |Mw9|7447:inst6|4                                                                ; |Mw9|7447:inst6|4                                                                ; out0             ;
+; |Mw9|7447:inst6|83                                                               ; |Mw9|7447:inst6|83                                                               ; out0             ;
+; |Mw9|7447:inst6|33                                                               ; |Mw9|7447:inst6|33                                                               ; out0             ;
+; |Mw9|7447:inst6|6                                                                ; |Mw9|7447:inst6|6                                                                ; out0             ;
+; |Mw9|7447:inst6|82                                                               ; |Mw9|7447:inst6|82                                                               ; out0             ;
+; |Mw9|7447:inst6|34                                                               ; |Mw9|7447:inst6|34                                                               ; out0             ;
+; |Mw9|7447:inst6|7                                                                ; |Mw9|7447:inst6|7                                                                ; out0             ;
+; |Mw9|7447:inst6|8                                                                ; |Mw9|7447:inst6|8                                                                ; out0             ;
+; |Mw9|7447:inst6|81                                                               ; |Mw9|7447:inst6|81                                                               ; out0             ;
+; |Mw9|7447:inst6|36                                                               ; |Mw9|7447:inst6|36                                                               ; out0             ;
+; |Mw9|7447:inst6|39                                                               ; |Mw9|7447:inst6|39                                                               ; out0             ;
+; |Mw9|7447:inst6|35                                                               ; |Mw9|7447:inst6|35                                                               ; out0             ;
+; |Mw9|7447:inst5|87                                                               ; |Mw9|7447:inst5|87                                                               ; out0             ;
+; |Mw9|7447:inst5|1                                                                ; |Mw9|7447:inst5|1                                                                ; out0             ;
+; |Mw9|7447:inst5|38                                                               ; |Mw9|7447:inst5|38                                                               ; out0             ;
+; |Mw9|7447:inst5|86                                                               ; |Mw9|7447:inst5|86                                                               ; out0             ;
+; |Mw9|7447:inst5|31                                                               ; |Mw9|7447:inst5|31                                                               ; out0             ;
+; |Mw9|7447:inst5|2                                                                ; |Mw9|7447:inst5|2                                                                ; out0             ;
+; |Mw9|7447:inst5|30                                                               ; |Mw9|7447:inst5|30                                                               ; out0             ;
+; |Mw9|7447:inst5|3                                                                ; |Mw9|7447:inst5|3                                                                ; out0             ;
+; |Mw9|7447:inst5|6                                                                ; |Mw9|7447:inst5|6                                                                ; out0             ;
+; |Mw9|7447:inst5|34                                                               ; |Mw9|7447:inst5|34                                                               ; out0             ;
+; |Mw9|7447:inst5|8                                                                ; |Mw9|7447:inst5|8                                                                ; out0             ;
+; |Mw9|7447:inst5|36                                                               ; |Mw9|7447:inst5|36                                                               ; out0             ;
+; |Mw9|7447:inst5|39                                                               ; |Mw9|7447:inst5|39                                                               ; out0             ;
+; |Mw9|Plus8s:inst2|inst3                                                          ; |Mw9|Plus8s:inst2|inst3                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst4                                                          ; |Mw9|Plus8s:inst2|inst4                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst5                                                          ; |Mw9|Plus8s:inst2|inst5                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst90                                                         ; |Mw9|Plus8s:inst2|inst90                                                         ; regout           ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[2]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[2]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[1]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[1]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[0]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[0]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst|HA:inst|inst1                  ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst|HA:inst|inst1                  ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|inst2                        ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|inst2                        ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst|inst1                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst|inst1                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst1|inst1               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst1|inst1               ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|inst2                        ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|inst2                        ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst|inst1                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst|inst1                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst1|inst1               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst1|inst1               ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst1|inst1               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst1|inst1               ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst4|5                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst4|5                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst5|5                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst5|5                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst6|5                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst6|5                                           ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst14                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst14                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst13                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst13                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst6                   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst6                   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst|HA:inst|inst1   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst|HA:inst|inst1   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|inst2          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|inst2          ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst1  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst1  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst3|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst3|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst2                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst2                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst1                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst1                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst6                   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst6                   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|3                 ; out0             ;
+; |Mw9|7447:inst4|1                                                                ; |Mw9|7447:inst4|1                                                                ; out0             ;
+; |Mw9|7447:inst4|31                                                               ; |Mw9|7447:inst4|31                                                               ; out0             ;
+; |Mw9|7447:inst4|3                                                                ; |Mw9|7447:inst4|3                                                                ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                               ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |Mw9|R[11]                                                                       ; |Mw9|R[11]                                                                       ; pin_out          ;
+; |Mw9|R[10]                                                                       ; |Mw9|R[10]                                                                       ; pin_out          ;
+; |Mw9|R[9]                                                                        ; |Mw9|R[9]                                                                        ; pin_out          ;
+; |Mw9|R[8]                                                                        ; |Mw9|R[8]                                                                        ; pin_out          ;
+; |Mw9|I[3]                                                                        ; |Mw9|I[3]                                                                        ; out              ;
+; |Mw9|I[2]                                                                        ; |Mw9|I[2]                                                                        ; out              ;
+; |Mw9|I[1]                                                                        ; |Mw9|I[1]                                                                        ; out              ;
+; |Mw9|I[0]                                                                        ; |Mw9|I[0]                                                                        ; out              ;
+; |Mw9|Shift                                                                       ; |Mw9|Shift                                                                       ; out              ;
+; |Mw9|F2                                                                          ; |Mw9|F2                                                                          ; pin_out          ;
+; |Mw9|A3                                                                          ; |Mw9|A3                                                                          ; pin_out          ;
+; |Mw9|B3                                                                          ; |Mw9|B3                                                                          ; pin_out          ;
+; |Mw9|C3                                                                          ; |Mw9|C3                                                                          ; pin_out          ;
+; |Mw9|D3                                                                          ; |Mw9|D3                                                                          ; pin_out          ;
+; |Mw9|E3                                                                          ; |Mw9|E3                                                                          ; pin_out          ;
+; |Mw9|F3                                                                          ; |Mw9|F3                                                                          ; pin_out          ;
+; |Mw9|7447:inst6|1                                                                ; |Mw9|7447:inst6|1                                                                ; out0             ;
+; |Mw9|7447:inst6|86                                                               ; |Mw9|7447:inst6|86                                                               ; out0             ;
+; |Mw9|7447:inst6|31                                                               ; |Mw9|7447:inst6|31                                                               ; out0             ;
+; |Mw9|7447:inst6|2                                                                ; |Mw9|7447:inst6|2                                                                ; out0             ;
+; |Mw9|7447:inst6|30                                                               ; |Mw9|7447:inst6|30                                                               ; out0             ;
+; |Mw9|7447:inst6|85                                                               ; |Mw9|7447:inst6|85                                                               ; out0             ;
+; |Mw9|7447:inst6|32                                                               ; |Mw9|7447:inst6|32                                                               ; out0             ;
+; |Mw9|7447:inst6|84                                                               ; |Mw9|7447:inst6|84                                                               ; out0             ;
+; |Mw9|7447:inst6|5                                                                ; |Mw9|7447:inst6|5                                                                ; out0             ;
+; |Mw9|7447:inst6|3                                                                ; |Mw9|7447:inst6|3                                                                ; out0             ;
+; |Mw9|7447:inst6|4                                                                ; |Mw9|7447:inst6|4                                                                ; out0             ;
+; |Mw9|7447:inst6|83                                                               ; |Mw9|7447:inst6|83                                                               ; out0             ;
+; |Mw9|7447:inst6|33                                                               ; |Mw9|7447:inst6|33                                                               ; out0             ;
+; |Mw9|7447:inst6|6                                                                ; |Mw9|7447:inst6|6                                                                ; out0             ;
+; |Mw9|7447:inst6|82                                                               ; |Mw9|7447:inst6|82                                                               ; out0             ;
+; |Mw9|7447:inst6|34                                                               ; |Mw9|7447:inst6|34                                                               ; out0             ;
+; |Mw9|7447:inst6|7                                                                ; |Mw9|7447:inst6|7                                                                ; out0             ;
+; |Mw9|7447:inst6|8                                                                ; |Mw9|7447:inst6|8                                                                ; out0             ;
+; |Mw9|7447:inst6|81                                                               ; |Mw9|7447:inst6|81                                                               ; out0             ;
+; |Mw9|7447:inst6|36                                                               ; |Mw9|7447:inst6|36                                                               ; out0             ;
+; |Mw9|7447:inst6|39                                                               ; |Mw9|7447:inst6|39                                                               ; out0             ;
+; |Mw9|7447:inst6|35                                                               ; |Mw9|7447:inst6|35                                                               ; out0             ;
+; |Mw9|7447:inst5|1                                                                ; |Mw9|7447:inst5|1                                                                ; out0             ;
+; |Mw9|7447:inst5|86                                                               ; |Mw9|7447:inst5|86                                                               ; out0             ;
+; |Mw9|7447:inst5|31                                                               ; |Mw9|7447:inst5|31                                                               ; out0             ;
+; |Mw9|7447:inst5|2                                                                ; |Mw9|7447:inst5|2                                                                ; out0             ;
+; |Mw9|7447:inst5|30                                                               ; |Mw9|7447:inst5|30                                                               ; out0             ;
+; |Mw9|7447:inst5|3                                                                ; |Mw9|7447:inst5|3                                                                ; out0             ;
+; |Mw9|7447:inst5|6                                                                ; |Mw9|7447:inst5|6                                                                ; out0             ;
+; |Mw9|7447:inst5|34                                                               ; |Mw9|7447:inst5|34                                                               ; out0             ;
+; |Mw9|7447:inst5|8                                                                ; |Mw9|7447:inst5|8                                                                ; out0             ;
+; |Mw9|7447:inst5|36                                                               ; |Mw9|7447:inst5|36                                                               ; out0             ;
+; |Mw9|7447:inst5|39                                                               ; |Mw9|7447:inst5|39                                                               ; out0             ;
+; |Mw9|Plus8s:inst2|inst3                                                          ; |Mw9|Plus8s:inst2|inst3                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst4                                                          ; |Mw9|Plus8s:inst2|inst4                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst5                                                          ; |Mw9|Plus8s:inst2|inst5                                                          ; regout           ;
+; |Mw9|Plus8s:inst2|inst90                                                         ; |Mw9|Plus8s:inst2|inst90                                                         ; regout           ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[2]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[2]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[1]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[1]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|8mux21:inst6|inst[0]                                           ; |Mw9|Plus8s:inst2|8mux21:inst6|inst[0]                                           ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst|HA:inst|inst1                  ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst|HA:inst|inst1                  ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|inst2                        ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|inst2                        ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst|inst1                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst|inst1                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst1|inst1               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst17|HA:inst1|inst1               ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|inst2                        ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|inst2                        ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst|inst1                ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst|inst1                ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst1|inst1               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst18|HA:inst1|inst1               ; out0             ;
+; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst1|inst1               ; |Mw9|Plus8s:inst2|Adder8:inst|Adder4:inst|FA:inst19|HA:inst1|inst1               ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst4|7                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst4|7                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst5|7                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst5|7                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst6|7                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst6|7                                           ; out0             ;
+; |Mw9|8sl:inst|Left:inst3|21mux:inst7|7                                           ; |Mw9|8sl:inst|Left:inst3|21mux:inst7|7                                           ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|inst6                   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst5|inst6                   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst4|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst3|mux41:inst7|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst5|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst6|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|5                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst|mux41:inst7|5                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst5|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst6|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst9|mux41:inst7|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst14                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst14                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst13                  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst13                  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst6                   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|inst6                   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst|HA:inst|inst    ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst|HA:inst|inst    ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst|HA:inst|inst1   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst|HA:inst|inst1   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|inst2          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|inst2          ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst1  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst|inst1  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst1|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst1 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst2|HA:inst1|inst1 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst3|HA:inst1|inst  ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst8|FA:inst3|HA:inst1|inst  ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst3                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst3                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst2                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst2                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst1                         ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst1                         ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst                          ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|inst                          ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst4|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|6                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|6                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|4                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|4                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst5|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst6|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|5                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst1|mux41:inst7|5                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst6                   ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|Adder4fDD:inst7|inst6                   ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst4|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst5|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst6|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|3                 ; |Mw9|DD:inst3|DatapathDD:inst1|20sl:inst|4sl:inst2|mux41:inst7|3                 ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst6                              ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst6                              ; regout           ;
+; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst6~0                            ; |Mw9|DD:inst3|DatapathDD:inst1|Counter8:inst1|inst6~0                            ; out0             ;
+; |Mw9|DD:inst3|DatapathDD:inst1|DCfC:inst2|inst                                   ; |Mw9|DD:inst3|DatapathDD:inst1|DCfC:inst2|inst                                   ; out0             ;
+; |Mw9|7447:inst4|1                                                                ; |Mw9|7447:inst4|1                                                                ; out0             ;
+; |Mw9|7447:inst4|31                                                               ; |Mw9|7447:inst4|31                                                               ; out0             ;
+; |Mw9|7447:inst4|3                                                                ; |Mw9|7447:inst4|3                                                                ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 20 21:06:21 2025
+Info: Command: quartus_sim --simulation_results_format=VWF Mw9 -c Mw9
+Info (324025): Using vector source file "D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB3/Multiple/Mw9wf.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Res[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "START" in design.
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      63.51 %
+Info (328052): Number of transitions in simulation is 1433
+Info (324045): Vector file Mw9.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Thu Nov 20 21:06:21 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

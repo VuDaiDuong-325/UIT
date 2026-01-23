@@ -1,0 +1,5 @@
+Vector Table: contains the intialization value for the stack pointer & entry point addresses
+
+Booting:
+- PC: 0x0000
+- processor read value at PC addr -> load value to MSP

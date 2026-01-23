@@ -1,0 +1,64 @@
+SPI
+have SCK -> synchronize serial
+- 4 pin:
+	SCK
+	MOSI (Master Output, Slave Input) -> Master sends data for slave
+	MISO (Master Input, Slave Output) -> Slave sends data for master
+	CS (SS)
+	
+	Han che: chi giao tiep voi 1 SPI trong 1 khoang tgian, khong the dong thoi giao tiep > 1
+
+CPOL = 0 -> low, rising, take first clock edge
+CPOL = 1 -> high, falling, take second clock edge
+CPHA = 0 -> Update theo SCK tich cuc canh len
+CPHA = 1 -> Update theo SCK tich cuc canh xuong
+
+SPI: 
+- Xac dinh SPI: SPI5
+- 4 pin:
+	Port ? 
+	Pin ? 
+PF6 - SPI5_NSS
+PF7 - SPI5_SCK
+PF8 - SPI5_MISO
+PF9 - SPI5_MOSI
+
+AF5
+1. cau hinh pin
+B1: enable GPIOF
+B2: alternative function mode
+B3: select alternative function
+
+2. cau hinh clock cho spi
+	SPI5->APB2 -> f = 16MHz
+	B1: enable clock cho SPI
+	B2: prescaler
+	
+3. SPI frame
+- mode: master/slave (MSTR)
+- Spi mode: CPHA, CPOL (CPHA, CPOL)
+- type of transfer: MSB/LSB  (LSB FIRST)
+- length: 8/16 -> data frame format
+
+cau hinh cho NSS
+type 1: SW
+	Software NSS management (SSM = 1) & SSI bit in the SPI_CR1 register
+	cau hinh pin SS -> output -> ODR
+type 2: HW
+	Hardware NSS management (SSM = 0)
+	
+	 NSS output enabled (SSM = 0, SSOE = 1)
+	 SS low khi SPI enable
+	 SS high khi SPI disable
+	
+	 
+enable spi (SPE)
+
+- TX
+
+4. send
+check TXE co empty -> ghi buffer
+
+D:\Apps\Study\KeilC\Core\ARM\ARMCLANG\bin\armclang.exe
+
+D:\Apps\Study\KeilC\Core\ARM\ARMCLANG\bin\fromelf.exe

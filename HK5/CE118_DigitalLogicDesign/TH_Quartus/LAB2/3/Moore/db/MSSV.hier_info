@@ -1,0 +1,130 @@
+|MSSVMe
+O <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X3 => inst3.IN0
+X3 => CombiMe:inst.X3
+X3 => 7447:inst5.D
+X2 => inst7.IN0
+X2 => CombiMe:inst.X2
+X2 => 7447:inst5.C
+X1 => inst6.IN0
+X1 => CombiMe:inst.X1
+X1 => 7447:inst5.B
+X0 => inst3.IN3
+X0 => CombiMe:inst.X0
+X0 => 7447:inst5.A
+CLK => DFFs:inst1.CLK
+A <= 7447:inst5.OA
+B <= 7447:inst5.OB
+C <= 7447:inst5.OC
+D <= 7447:inst5.OD
+E <= 7447:inst5.OE
+F <= 7447:inst5.OF
+G <= 7447:inst5.OG
+
+
+|MSSVMe|OutputMe:inst2
+O <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q3 => inst.IN0
+Q2 => inst1.IN1
+Q1 => inst1.IN2
+Q0 => inst1.IN3
+
+
+|MSSVMe|DFFs:inst1
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D3 => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+
+
+|MSSVMe|CombiMe:inst
+D3 <= <GND>
+D2 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Q3 => inst54.IN0
+Q2 => inst55.IN0
+Q2 => inst18.IN1
+Q2 => inst20.IN1
+Q2 => inst16.IN1
+Q2 => inst3.IN1
+Q2 => inst33.IN1
+Q2 => inst31.IN1
+Q2 => inst44.IN1
+Q2 => inst64.IN1
+Q2 => inst67.IN1
+Q2 => inst66.IN1
+Q2 => inst46.IN1
+Q1 => inst14.IN2
+Q1 => inst56.IN0
+Q1 => inst20.IN2
+Q1 => inst29.IN2
+Q1 => inst33.IN2
+Q1 => inst42.IN2
+Q1 => inst65.IN2
+Q1 => inst67.IN2
+Q1 => inst46.IN2
+Q0 => inst14.IN3
+Q0 => inst18.IN3
+Q0 => inst57.IN0
+Q0 => inst27.IN3
+Q0 => inst31.IN3
+Q0 => inst63.IN3
+Q0 => inst66.IN3
+X3 => inst58.IN0
+X2 => inst59.IN0
+X2 => inst21.IN1
+X2 => inst30.IN1
+X2 => inst34.IN1
+X2 => inst43.IN1
+X2 => inst47.IN1
+X1 => inst15.IN2
+X1 => inst19.IN2
+X1 => inst60.IN0
+X1 => inst2.IN2
+X1 => inst28.IN2
+X1 => inst32.IN2
+X1 => inst41.IN2
+X1 => inst70.IN2
+X0 => inst61.IN0
+X0 => inst19.IN3
+X0 => inst21.IN3
+X0 => inst2.IN3
+X0 => inst30.IN3
+X0 => inst28.IN3
+X0 => inst34.IN3
+X0 => inst32.IN3
+X0 => inst43.IN3
+X0 => inst47.IN3
+D1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MSSVMe|7447:inst5
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+

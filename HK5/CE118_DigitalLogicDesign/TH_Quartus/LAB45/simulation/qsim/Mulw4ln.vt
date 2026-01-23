@@ -1,0 +1,407 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/10/2025 16:05:09"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Mulw4ln
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Mulw4ln_vlg_sample_tst(
+	CLK,
+	I,
+	START,
+	sampler_tx
+);
+input  CLK;
+input [3:0] I;
+input  START;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(CLK or I or START)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Mulw4ln_vlg_check_tst (
+	A0,
+	A1,
+	A2,
+	B0,
+	B1,
+	B2,
+	C0,
+	C1,
+	C2,
+	D0,
+	D1,
+	D2,
+	DONE,
+	E0,
+	E1,
+	E2,
+	F0,
+	F1,
+	F2,
+	G0,
+	G1,
+	G2,
+	sampler_rx
+);
+input  A0;
+input  A1;
+input  A2;
+input  B0;
+input  B1;
+input  B2;
+input  C0;
+input  C1;
+input  C2;
+input  D0;
+input  D1;
+input  D2;
+input  DONE;
+input  E0;
+input  E1;
+input  E2;
+input  F0;
+input  F1;
+input  F2;
+input  G0;
+input  G1;
+input  G2;
+input sampler_rx;
+
+reg  A0_expected;
+reg  A1_expected;
+reg  A2_expected;
+reg  B0_expected;
+reg  B1_expected;
+reg  B2_expected;
+reg  C0_expected;
+reg  C1_expected;
+reg  C2_expected;
+reg  D0_expected;
+reg  D1_expected;
+reg  D2_expected;
+reg  DONE_expected;
+reg  E0_expected;
+reg  E1_expected;
+reg  E2_expected;
+reg  F0_expected;
+reg  F1_expected;
+reg  F2_expected;
+reg  G0_expected;
+reg  G1_expected;
+reg  G2_expected;
+
+reg  A0_prev;
+reg  A1_prev;
+reg  A2_prev;
+reg  B0_prev;
+reg  B1_prev;
+reg  B2_prev;
+reg  C0_prev;
+reg  C1_prev;
+reg  C2_prev;
+reg  D0_prev;
+reg  D1_prev;
+reg  D2_prev;
+reg  DONE_prev;
+reg  E0_prev;
+reg  E1_prev;
+reg  E2_prev;
+reg  F0_prev;
+reg  F1_prev;
+reg  F2_prev;
+reg  G0_prev;
+reg  G1_prev;
+reg  G2_prev;
+
+reg  DONE_expected_prev;
+
+reg  last_DONE_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:22] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 22'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	A0_prev = A0;
+	A1_prev = A1;
+	A2_prev = A2;
+	B0_prev = B0;
+	B1_prev = B1;
+	B2_prev = B2;
+	C0_prev = C0;
+	C1_prev = C1;
+	C2_prev = C2;
+	D0_prev = D0;
+	D1_prev = D1;
+	D2_prev = D2;
+	DONE_prev = DONE;
+	E0_prev = E0;
+	E1_prev = E1;
+	E2_prev = E2;
+	F0_prev = F0;
+	F1_prev = F1;
+	F2_prev = F2;
+	G0_prev = G0;
+	G1_prev = G1;
+	G2_prev = G2;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	DONE_expected_prev = DONE_expected;
+end
+
+
+
+// expected DONE
+initial
+begin
+	DONE_expected = 1'bX;
+end 
+// generate trigger
+always @(A0_expected or A0 or A1_expected or A1 or A2_expected or A2 or B0_expected or B0 or B1_expected or B1 or B2_expected or B2 or C0_expected or C0 or C1_expected or C1 or C2_expected or C2 or D0_expected or D0 or D1_expected or D1 or D2_expected or D2 or DONE_expected or DONE or E0_expected or E0 or E1_expected or E1 or E2_expected or E2 or F0_expected or F0 or F1_expected or F1 or F2_expected or F2 or G0_expected or G0 or G1_expected or G1 or G2_expected or G2)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected A0 = %b | expected A1 = %b | expected A2 = %b | expected B0 = %b | expected B1 = %b | expected B2 = %b | expected C0 = %b | expected C1 = %b | expected C2 = %b | expected D0 = %b | expected D1 = %b | expected D2 = %b | expected DONE = %b | expected E0 = %b | expected E1 = %b | expected E2 = %b | expected F0 = %b | expected F1 = %b | expected F2 = %b | expected G0 = %b | expected G1 = %b | expected G2 = %b | ",A0_expected_prev,A1_expected_prev,A2_expected_prev,B0_expected_prev,B1_expected_prev,B2_expected_prev,C0_expected_prev,C1_expected_prev,C2_expected_prev,D0_expected_prev,D1_expected_prev,D2_expected_prev,DONE_expected_prev,E0_expected_prev,E1_expected_prev,E2_expected_prev,F0_expected_prev,F1_expected_prev,F2_expected_prev,G0_expected_prev,G1_expected_prev,G2_expected_prev);
+	$display("| real A0 = %b | real A1 = %b | real A2 = %b | real B0 = %b | real B1 = %b | real B2 = %b | real C0 = %b | real C1 = %b | real C2 = %b | real D0 = %b | real D1 = %b | real D2 = %b | real DONE = %b | real E0 = %b | real E1 = %b | real E2 = %b | real F0 = %b | real F1 = %b | real F2 = %b | real G0 = %b | real G1 = %b | real G2 = %b | ",A0_prev,A1_prev,A2_prev,B0_prev,B1_prev,B2_prev,C0_prev,C1_prev,C2_prev,D0_prev,D1_prev,D2_prev,DONE_prev,E0_prev,E1_prev,E2_prev,F0_prev,F1_prev,F2_prev,G0_prev,G1_prev,G2_prev);
+`endif
+	if (
+		( DONE_expected_prev !== 1'bx ) && ( DONE_prev !== DONE_expected_prev )
+		&& ((DONE_expected_prev !== last_DONE_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DONE :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DONE_expected_prev);
+		$display ("     Real value = %b", DONE_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_DONE_exp = DONE_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#300000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Mulw4ln_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg [3:0] I;
+reg START;
+// wires                                               
+wire A0;
+wire A1;
+wire A2;
+wire B0;
+wire B1;
+wire B2;
+wire C0;
+wire C1;
+wire C2;
+wire D0;
+wire D1;
+wire D2;
+wire DONE;
+wire E0;
+wire E1;
+wire E2;
+wire F0;
+wire F1;
+wire F2;
+wire G0;
+wire G1;
+wire G2;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Mulw4ln i1 (
+// port map - connection between master ports and signals/registers   
+	.A0(A0),
+	.A1(A1),
+	.A2(A2),
+	.B0(B0),
+	.B1(B1),
+	.B2(B2),
+	.C0(C0),
+	.C1(C1),
+	.C2(C2),
+	.CLK(CLK),
+	.D0(D0),
+	.D1(D1),
+	.D2(D2),
+	.DONE(DONE),
+	.E0(E0),
+	.E1(E1),
+	.E2(E2),
+	.F0(F0),
+	.F1(F1),
+	.F2(F2),
+	.G0(G0),
+	.G1(G1),
+	.G2(G2),
+	.I(I),
+	.START(START)
+);
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #10000 1'b1;
+	#10000;
+end 
+// I[ 3 ]
+initial
+begin
+	I[3] = 1'b0;
+	I[3] = #50000 1'b1;
+	I[3] = #20000 1'b0;
+	I[3] = #20000 1'b1;
+	I[3] = #20000 1'b0;
+end 
+// I[ 2 ]
+initial
+begin
+	I[2] = 1'b0;
+	I[2] = #50000 1'b1;
+	I[2] = #20000 1'b0;
+	I[2] = #20000 1'b1;
+	I[2] = #20000 1'b0;
+end 
+// I[ 1 ]
+initial
+begin
+	I[1] = 1'b0;
+	I[1] = #50000 1'b1;
+	I[1] = #20000 1'b0;
+	I[1] = #20000 1'b1;
+	I[1] = #20000 1'b0;
+end 
+// I[ 0 ]
+initial
+begin
+	I[0] = 1'b0;
+	I[0] = #50000 1'b1;
+	I[0] = #20000 1'b0;
+	I[0] = #20000 1'b1;
+	I[0] = #20000 1'b0;
+end 
+
+// START
+initial
+begin
+	START = 1'b0;
+	START = #20000 1'b1;
+end 
+
+Mulw4ln_vlg_sample_tst tb_sample (
+	.CLK(CLK),
+	.I(I),
+	.START(START),
+	.sampler_tx(sampler)
+);
+
+Mulw4ln_vlg_check_tst tb_out(
+	.A0(A0),
+	.A1(A1),
+	.A2(A2),
+	.B0(B0),
+	.B1(B1),
+	.B2(B2),
+	.C0(C0),
+	.C1(C1),
+	.C2(C2),
+	.D0(D0),
+	.D1(D1),
+	.D2(D2),
+	.DONE(DONE),
+	.E0(E0),
+	.E1(E1),
+	.E2(E2),
+	.F0(F0),
+	.F1(F1),
+	.F2(F2),
+	.G0(G0),
+	.G1(G1),
+	.G2(G2),
+	.sampler_rx(sampler)
+);
+endmodule
+

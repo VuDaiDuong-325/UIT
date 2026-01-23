@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="MIPS">
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_16" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_7" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_0" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_17" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_8" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_1" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_10" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_14" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_18" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_5" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_9" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|lpm_constant0:inst22|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_dk6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_11" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_15" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_19" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_2" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_20" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_6" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|AU1:inst24|lpm_mux0:inst9|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_u4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_12" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_21" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_3" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_13" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIPS|Datapath:inst|IMEM:inst7|LPM_MUX:rom_rtl_4" CBX_FILE_NAME="mux_ioc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

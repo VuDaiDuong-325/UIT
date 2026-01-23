@@ -1,0 +1,8 @@
+D:\Apps\Study\KeilC\Core\ARM\ARMCLANG\bin\armclang.exe
+
+--target=arm-arm-none-eabi -mcpu=cortex-m4 -masm=auto -c startup_stm32f429xx.s -o st.o
+
+D:\Apps\Study\KeilC\Core\ARM\ARMCLANG\bin\fromelf.exe
+
+D:\Apps\Study\KeilC\Core\ARM\ARMCLANG\bin\armlink.exe
+--scatter=compile.sct --cpu=cortex-m4 --info sizes --symbols --info totals --info unused --map --list= STM32F4.map main.o st.o -o out.axf

@@ -1,0 +1,78 @@
+USART 
+- Có dây
+- Bat dong bp
+- UART overview
+	- start bit -> word data -> parity bit -> stop bit
+	- parity bit: count number of bit 1
+	
+- USART
+	- baud rate: toc do truyen
+	1. Thu tu cau hinh:
+		- UARTx bao nhieu ? -> hardware
+		- Pin Tx, Rx
+		- GPIOx_MODER = 10;
+		- Set GPIO alternate function (GPIOx_AFGH & GPIOx_AFRL)
+		- find PINx for UARTx_Tx & Rx
+		
+	2. Setting clock for UART
+		- Freq of UART ?Hz (like timer)
+		
+	3. Setting baud rate (USART_BRR) = x => 1s for x bit;
+	-  OVERR8: thoi gian lay mau
+		- x bit o giua:
+			- = nhau => khong nhieu
+			- lech => nhieu
+	3.1. DIV_Mantissa
+	3.2. DIV_Fraction
+	
+	baud = 9600
+	Fuart = 16MHz
+	OVER8 = 8 => 0
+		=> UART_DIV = 208.333
+		
+		DIV_Mantissa = 208.333
+		DIV_Fraction = 208.333 * 8 (depend on OVER8)
+		
+	4. Setting USART
+	+Transmit:
+	- Setting frame: M, PCE, PB, STOP[1:0]
+		- length
+		- Stop bit
+		- parity bit
+	- Enable TE (transmit)
+	- Check buffer transmit empty ?
+		- Empty -> Add data to TDR
+		
+	+Receive
+	- Setting frame: M, PCE, PB, STOP[1:0]
+		- length
+		- Stop bit
+		- parity bit
+	- Enable RE 
+	- Check buffer transmit empty ?
+		- Empty -> REad data of RDR
+		
+Cau hinh interrupt 
+
+ 
+
+NVIC_ISER1 -> 32 -> 63  bit 0 ->32
+							1 -> 33
+							2
+							3
+							4
+							5 -> 37
+							
+NVIC_ISER1 |= (1<<5)
+
+typedef enum
+NVIC_ISER[irq_num/32] = (1 << (irq_num%32));
+
+6. Enable Receive Interrupt
+UART1->CR1 |= (1<<5)
+
+testing
+void USART1_IRQHandler(void)
+{	//breakpoint
+
+}

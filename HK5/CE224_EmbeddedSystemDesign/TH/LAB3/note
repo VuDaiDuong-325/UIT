@@ -1,0 +1,36 @@
+Set enable for TIM2 
+-> SET clock freq 
+-> Setting counter: auto-reload value(ARR) = 8MHz - 1, counter = 0; 
+-> Enable Timer Interrupt: Dier = 1 => UIE = 1 (Update interrupt enabled)
+-> Start Timer: CR1 |= (1<<0)
+-> Enable interruot NVIC
+
+Tim2 -> Tim2_IRQHandler
+
+PRototype -> void event_IRQHAndler(void)
+
+return
+parameter ?
+
+Interrupt Set-enable Registers
+
+enable Interrupt NVIC cho Tim2 ?
+-> enable 28th register from 0 to 1 for TIM2
+
+#define NVIC_ISER0 (*(volatile unsign int *)0xE000E100)
+NVIC_ISER0 |= (1<<28)
+
+8 thanh ghi 32 bit, 1bit cho 1 interrupt
+
+NVIC_ISER0 irq0->irq31
+Tu bang Vector Table for STM32F4 -> tim o irq bao nhieu
+ 
+ Set interrupt pending & IRQn -> call Handler 
+ Jump into Handler rules:
+ - Short code: just for event
+ - clear interrupt flag in Timer Handler function
+ 
+Create struct like TIMx map => Use -> Pointing to register addr -> map dung thu tu cua register vao struct
+Da hinh addr thanh 1 struct pointer -> tot nhung kho hieu
+All Timers can Use TIMx struct, except some special register just be used for special TIM
+

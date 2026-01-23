@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\TKLLS\LAB6_TNVD\simulation\qsim
+vControlUnit
+Z1 IeSeX[kNMQ?fNWOoTTi30P3
+Z2 VIbNhgfTl0i[_cTTzC<IP=3
+Z3 dC:\Users\ASUS\Desktop\TKLLS\LAB6_TNVD\simulation\qsim
+Z4 w1765295654
+Z5 8MIPS.vo
+Z6 FMIPS.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|MIPS.vo|
+Z9 o-work work -O0
+Z10 n@control@unit
+Z11 !s100 LLC1>4@z__b7ZE_K3c7GM2
+Z12 !s108 1765295655.451000
+Z13 !s107 MIPS.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vControlUnit_vlg_check_tst
+Z14 I@@lVA4L3:Cfb;f6bOV3bU1
+Z15 V<XK_<i0kD>T?_>^jhJL;j0
+R3
+Z16 w1765295653
+Z17 8MIPS.vt
+Z18 FMIPS.vt
+L0 59
+R7
+r1
+31
+Z19 !s108 1765295655.483000
+Z20 !s107 MIPS.vt|
+Z21 !s90 -work|work|MIPS.vt|
+R9
+Z22 n@control@unit_vlg_check_tst
+Z23 !s100 d?l8GYDIj79DF[]=j[1z31
+!i10b 1
+!s85 0
+!s101 -O0
+vControlUnit_vlg_sample_tst
+Z24 IGP;5nSE21R;9FdI2NgMYn3
+Z25 VNod]FhaID76e;z47d14;<3
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R9
+Z26 n@control@unit_vlg_sample_tst
+Z27 !s100 ia?`@Zc>RK`?ehhe6Ob<S3
+!i10b 1
+!s85 0
+!s101 -O0
+vControlUnit_vlg_vec_tst
+Z28 Im9OOl4knQZdj<?T;ZR]HW3
+Z29 VO6TXMeT1YTFRS5Yfl1N6G1
+R3
+R16
+R17
+R18
+Z30 L0 369
+R7
+r1
+31
+R19
+R20
+R21
+R9
+Z31 n@control@unit_vlg_vec_tst
+Z32 !s100 ;dN[`<75j11@=YURSh4`L0
+!i10b 1
+!s85 0
+!s101 -O0
+vTop_final
+Z33 Ii=M5AE`^0:TSg>6MOh4mi2
+Z34 VW39Ib2TL4_KD@Jhk6l]Rj1
+R3
+Z35 w1765338599
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z36 n@top_final
+!i10b 1
+Z37 !s100 :K9b4hWAEg@8D=N=AUcF33
+!s85 0
+Z38 !s108 1765338601.157000
+R13
+!s101 -O0
+vTop_final_vlg_check_tst
+!i10b 1
+!s100 ziSA0gCYQlKO<MW]3kn>K3
+IPiX@K4A@7;7gzXI4j>6Jk1
+VeN=B95HmGOn6<VWOf=LX82
+R3
+Z39 w1765338598
+R17
+R18
+L0 59
+R7
+r1
+!s85 0
+31
+Z40 !s108 1765338601.434000
+Z41 !s107 MIPS.vt|
+R21
+!s101 -O0
+R9
+Z42 n@top_final_vlg_check_tst
+vTop_final_vlg_sample_tst
+!i10b 1
+Z43 !s100 b6Z^2:GL4N<:5dZ3cfoDa2
+Z44 Id8I<@_cznXe`HRYhTl@N@2
+Z45 VUbMNYzV0I_28@b73hUczb0
+R3
+R39
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R40
+R41
+R21
+!s101 -O0
+R9
+Z46 n@top_final_vlg_sample_tst
+vTop_final_vlg_vec_tst
+!i10b 1
+!s100 86BnePgjbO;>8zjm8@Q;N0
+IXRK]:^L2RHTMc6Q<OZX_@1
+Z47 V0CDN7[BVI1_UhWNgYlnVd2
+R3
+R39
+R17
+R18
+L0 1964
+R7
+r1
+!s85 0
+31
+R40
+R41
+R21
+!s101 -O0
+R9
+Z48 n@top_final_vlg_vec_tst

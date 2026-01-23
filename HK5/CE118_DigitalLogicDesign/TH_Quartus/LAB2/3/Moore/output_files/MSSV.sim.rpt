@@ -1,0 +1,222 @@
+Simulator report for MSSV
+Sat Oct 18 20:50:28 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 420.0 ns     ;
+; Simulation Netlist Size     ; 62 nodes     ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 625          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                               ;               ;
+; Vector input source                                                                        ; D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB2/3/Moore/MSSVw.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                ; On            ;
+; Check outputs                                                                              ; Off                                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 62           ;
+; Total output ports checked                          ; 62           ;
+; Total output ports with complete 1/0-value coverage ; 62           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                    ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |MSSVMe|O                    ; |MSSVMe|O                    ; pin_out          ;
+; |MSSVMe|inst4                ; |MSSVMe|inst4                ; out0             ;
+; |MSSVMe|inst3                ; |MSSVMe|inst3                ; out0             ;
+; |MSSVMe|X3                   ; |MSSVMe|X3                   ; out              ;
+; |MSSVMe|X2                   ; |MSSVMe|X2                   ; out              ;
+; |MSSVMe|X1                   ; |MSSVMe|X1                   ; out              ;
+; |MSSVMe|X0                   ; |MSSVMe|X0                   ; out              ;
+; |MSSVMe|CLK                  ; |MSSVMe|CLK                  ; out              ;
+; |MSSVMe|CombiMe:inst|inst26  ; |MSSVMe|CombiMe:inst|inst26  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst22  ; |MSSVMe|CombiMe:inst|inst22  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst14  ; |MSSVMe|CombiMe:inst|inst14  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst15  ; |MSSVMe|CombiMe:inst|inst15  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst24  ; |MSSVMe|CombiMe:inst|inst24  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst18  ; |MSSVMe|CombiMe:inst|inst18  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst19  ; |MSSVMe|CombiMe:inst|inst19  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst25  ; |MSSVMe|CombiMe:inst|inst25  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst20  ; |MSSVMe|CombiMe:inst|inst20  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst21  ; |MSSVMe|CombiMe:inst|inst21  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst23  ; |MSSVMe|CombiMe:inst|inst23  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst16  ; |MSSVMe|CombiMe:inst|inst16  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst17  ; |MSSVMe|CombiMe:inst|inst17  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst4   ; |MSSVMe|CombiMe:inst|inst4   ; out0             ;
+; |MSSVMe|CombiMe:inst|inst3   ; |MSSVMe|CombiMe:inst|inst3   ; out0             ;
+; |MSSVMe|CombiMe:inst|inst2   ; |MSSVMe|CombiMe:inst|inst2   ; out0             ;
+; |MSSVMe|CombiMe:inst|inst36  ; |MSSVMe|CombiMe:inst|inst36  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst29  ; |MSSVMe|CombiMe:inst|inst29  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst30  ; |MSSVMe|CombiMe:inst|inst30  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst35  ; |MSSVMe|CombiMe:inst|inst35  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst27  ; |MSSVMe|CombiMe:inst|inst27  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst28  ; |MSSVMe|CombiMe:inst|inst28  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst38  ; |MSSVMe|CombiMe:inst|inst38  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst33  ; |MSSVMe|CombiMe:inst|inst33  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst34  ; |MSSVMe|CombiMe:inst|inst34  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst37  ; |MSSVMe|CombiMe:inst|inst37  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst31  ; |MSSVMe|CombiMe:inst|inst31  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst32  ; |MSSVMe|CombiMe:inst|inst32  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst48  ; |MSSVMe|CombiMe:inst|inst48  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst40  ; |MSSVMe|CombiMe:inst|inst40  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst41  ; |MSSVMe|CombiMe:inst|inst41  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst50  ; |MSSVMe|CombiMe:inst|inst50  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst44  ; |MSSVMe|CombiMe:inst|inst44  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst45  ; |MSSVMe|CombiMe:inst|inst45  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst49  ; |MSSVMe|CombiMe:inst|inst49  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst42  ; |MSSVMe|CombiMe:inst|inst42  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst43  ; |MSSVMe|CombiMe:inst|inst43  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst71  ; |MSSVMe|CombiMe:inst|inst71  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst63  ; |MSSVMe|CombiMe:inst|inst63  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst64  ; |MSSVMe|CombiMe:inst|inst64  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst65  ; |MSSVMe|CombiMe:inst|inst65  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst67  ; |MSSVMe|CombiMe:inst|inst67  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst66  ; |MSSVMe|CombiMe:inst|inst66  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst70  ; |MSSVMe|CombiMe:inst|inst70  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst51  ; |MSSVMe|CombiMe:inst|inst51  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst46  ; |MSSVMe|CombiMe:inst|inst46  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst47  ; |MSSVMe|CombiMe:inst|inst47  ; out0             ;
+; |MSSVMe|CombiMe:inst|inst5   ; |MSSVMe|CombiMe:inst|inst5   ; out0             ;
+; |MSSVMe|CombiMe:inst|inst6   ; |MSSVMe|CombiMe:inst|inst6   ; out0             ;
+; |MSSVMe|CombiMe:inst|inst7   ; |MSSVMe|CombiMe:inst|inst7   ; out0             ;
+; |MSSVMe|DFFs:inst1|inst1     ; |MSSVMe|DFFs:inst1|inst1     ; regout           ;
+; |MSSVMe|DFFs:inst1|inst2     ; |MSSVMe|DFFs:inst1|inst2     ; regout           ;
+; |MSSVMe|DFFs:inst1|inst3     ; |MSSVMe|DFFs:inst1|inst3     ; regout           ;
+; |MSSVMe|OutputMe:inst2|inst1 ; |MSSVMe|OutputMe:inst2|inst1 ; out0             ;
++------------------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Oct 18 20:50:28 2025
+Info: Command: quartus_sim --simulation_results_format=VWF MSSV -c MSSV
+Info (324025): Using vector source file "D:/HK5/CE118_DigitalLogicDesign/TH_Quartus/LAB2/3/Moore/MSSVw.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 625
+Info (324045): Vector file MSSV.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Sat Oct 18 20:50:28 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
