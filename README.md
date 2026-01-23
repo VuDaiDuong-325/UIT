@@ -18,17 +18,22 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | MA005  -   Probability and statistics                 |                               |
 |          | PH002  -   Introduction to digital circuit            |                               |
 |          | SS004  -   Professional skills                        | [`SS004.10`](https://github.com/hamstrous/SS004.10) *(submodule)*                             |
-| [HK3](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK3) | IT003     -   Data Structures & Algorithms   | [`HK3_DSA`](https://github.com/VuDaiDuong-23520359/HK3_DSA) *(submodule)* |
+| [HK3](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK3) | IT003     -   Data Structures & Algorithms   | [`Data Structure & Algorithm`](https://github.com/VuDaiDuong-325/Data-Structures-and-Algorithms-Learning) *(submodule)* |
 |          | IT004  -   Structured Query Language                  |                               |
 |          | IT005  -   Introduction to computer networks          |                               |
 |          | IT006  -   Computer Architecture                      |                               |
 |          | SS006  -   Introduction to law                        |                               |
 |          | SS009  -   Scientific Socialism                       |                               |
 |          | SS010  -   History of Vietnamese communist party      |                               |
-| [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103    -   Microprocessors & microcontrollers      | [`MPU-MCU_project`](https://github.com/VuDaiDuong-23520359/MPU-MCU_project) *(submodule)* |
+| [HK4](https://github.com/VuDaiDuong-23520359/UIT/tree/DesktopUIT/HK4)  | CE103    -   Microprocessors & microcontrollers      | [`Project`](https://github.com/VuDaiDuong-325/Controlling-WS2812b-using-STM32) *(submodule)* |
 |          | CE122  -   Engineering Circuit Analysis               |                               |
-|          | IT007  -   Operating Systems                          | [`OS_ubuntu`](https://github.com/VuDaiDuong-23520359/OS_ubuntu) *(submodule)* |
+|          | IT007  -   Operating Systems                          | [`Operating System`](https://github.com/VuDaiDuong-325/Operating-System-Learning) *(submodule)* |
 |          | SS008  -   Marxism–Leninism political economy         |                               |
+| [HK5](https://github.com/VuDaiDuong-325/UIT/tree/DesktopUIT/HK5) | CE118  -  Digital Logic Design | 
+['Circuit Simulation'](https://github.com/VuDaiDuong-325/Circuit-Simulation-in-Digital-Logic-Design-Learning) *(submodule)* |
+|          | CE124  -    Electronic Devices  |  |
+|          | CE224  -    Embedded System Design  |  ['Project'](https://github.com/DuyNDP/CE224_Control_Led_APA102) *(submodule)*  |
+|          | CS221  -    Natural Language Processing  |  |
 ---
 
 ## 💻 Course Tools Used
@@ -36,17 +41,20 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | Course Code | Course Name                               | Tools Used |
 |-------------|--------------------------------------------|------------|
 | IT001       | Introduction to programming                | Code::Blocks, VS, VSCode |
-| IT002       | Object-oriented programming (OOP)          | VS, VSCode |
+| IT002       | Object-oriented programming                | VS, VSCode |
 | PH002       | Introduction to digital circuit            | Quartus |
 | SS004       | Professional skills                        | VS, VSCode |
-| IT003       | Data Structures & Algorithms (DSA)         | VS, VSCode |
-| IT004       | Structured Query Language (SQL)            | SQL Server |
+| IT003       | Data Structures & Algorithms               | VS, VSCode |
+| IT004       | Structured Query Language                  | SQL Server |
 | IT005       | Introduction to Computer Networks          | Wireshark, Charles, curl, Packet Tracer, VirtualBox |
 | IT006       | Computer Architecture                      | MARS |
 | CE103       | Microprocessors & Microcontrollers         | Proteus, ASM 8086 Emulator, STM32CubeIDE/MX |
 | CE122       | Engineering Circuit Analysis               | Proteus, LTSpice |
-| IT007       | Operating Systems (OS)                     | Ubuntu, WSL, VSCode |
-
+| IT007       | Operating Systems                          | Ubuntu, WSL, VSCode |
+| CE118       | Digital Logic Design                       | Quartus  |
+| CE124       | Electronic Devices                         | LTSpice  |
+| CE224       | Embedded System Design                     | STM32CubeIDE/MX, KeilC, VSCode  |
+| CS221       | Natural Language Processing                | Google Colab, VSCode  |
 ---
 
 ## 📦 Git Configuration Files
