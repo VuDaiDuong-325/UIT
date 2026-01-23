@@ -30,7 +30,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | IT007  -   Operating Systems                          | [`Operating System`](https://github.com/VuDaiDuong-325/Operating-System-Learning) *(submodule)* |
 |          | SS008  -   Marxism–Leninism political economy         |                               |
 | [HK5](https://github.com/VuDaiDuong-325/UIT/tree/DesktopUIT/HK5) | CE118  -  Digital Logic Design | [`Circuit Simulation`](https://github.com/VuDaiDuong-325/Circuit-Simulation-in-Digital-Logic-Design-Learning) *(submodule)* |
-|          | CE124  -    Electronic Devices  |  |
+|          | CE124  -    Electronic Devices and Circuits  |  |
 |          | CE224  -    Embedded System Design  |  [`Project`](https://github.com/DuyNDP/CE224_Control_Led_APA102) *(submodule)*  |
 |          | CS221  -    Natural Language Processing  |  |
 ---
@@ -51,7 +51,7 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | CE122       | Engineering Circuit Analysis               | Proteus, LTSpice |
 | IT007       | Operating Systems                          | Ubuntu, WSL, VSCode |
 | CE118       | Digital Logic Design                       | Quartus  |
-| CE124       | Electronic Devices                         | LTSpice  |
+| CE124       | Electronic Devices & Circuits              | LTSpice  |
 | CE224       | Embedded System Design                     | STM32CubeIDE/MX, KeilC, VSCode  |
 | CS221       | Natural Language Processing                | Google Colab, VSCode  |
 ---
