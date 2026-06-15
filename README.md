@@ -34,10 +34,9 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | CE224  -    Embedded System Design  |  [`Project`](https://github.com/DuyNDP/CE224_Control_Led_APA102) *(submodule)*  |
 |          | CS221  -    Natural Language Processing  |  |
 | [HK6](https://github.com/VuDaiDuong-325/UIT/tree/DesktopUIT/HK6) | CE222  -  Digital Integrated Circuit Design | [`CMOS Digital Circuits`](https://github.com/VuDaiDuong-325/CMOS-digital-circuits) *(submodule)* |
-|          | CE213  -    Digital System Design with HDL  | [`INT8 Matmul Accelerator`](https://github.com/VuDaiDuong-325/int8-matmul-accelerator) *(submodule)* |
-|          | CE201  -    Project 1  | [`INT8 Matmul Accelerator`](https://github.com/VuDaiDuong-325/int8-matmul-accelerator) *(submodule)* |
-|          | CE433  -    SoC Design  | [`VGA Image Processing`](https://github.com/VuDaiDuong-325/VGA-Image-Processing-Pipeline) *(submodule)* 
-[`TVLA Leakage Analysis`](https://github.com/VuDaiDuong-325/RTL-TVLA-Leakage) *(submodule)* |
+|          | CE213  -    Digital System Design with HDL  | [`INT8 Matmul Accelerator`](https://github.com/VuDaiDuong-325/int8-matmul-accelerator) *(shared with CE201)* |
+|          | CE201  -    Project 1  | [`INT8 Matmul Accelerator`](https://github.com/VuDaiDuong-325/int8-matmul-accelerator) *(shared repository)* |
+|          | CE433  -    SoC Design  | [`VGA Image Processing`](https://github.com/VuDaiDuong-325/VGA-Image-Processing-Pipeline) *(submodule)* <br> [`TVLA Leakage Analysis`](https://github.com/VuDaiDuong-325/RTL-TVLA-Leakage) *(submodule)* |
 ---
 
 ## 💻 Course Tools Used
