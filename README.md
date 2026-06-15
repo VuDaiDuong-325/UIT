@@ -33,6 +33,11 @@ This repository collects academic materials organized by semester at **UIT** (Un
 |          | CE124  -    Electronic Devices and Circuits  |  |
 |          | CE224  -    Embedded System Design  |  [`Project`](https://github.com/DuyNDP/CE224_Control_Led_APA102) *(submodule)*  |
 |          | CS221  -    Natural Language Processing  |  |
+| [HK6](https://github.com/VuDaiDuong-325/UIT/tree/DesktopUIT/HK6) | CE222  -  Digital Integrated Circuit Design | [`CMOS Digital Circuits`](https://github.com/VuDaiDuong-325/CMOS-digital-circuits) *(submodule)* |
+|          | CE213  -    Digital System Design with HDL  | [`INT8 Matmul Accelerator`](https://github.com/VuDaiDuong-325/int8-matmul-accelerator) *(submodule)* |
+|          | CE201  -    Project 1  | [`INT8 Matmul Accelerator`](https://github.com/VuDaiDuong-325/int8-matmul-accelerator) *(submodule)* |
+|          | CE433  -    SoC Design  | [`VGA Image Processing`](https://github.com/VuDaiDuong-325/VGA-Image-Processing-Pipeline) *(submodule)* 
+[`TVLA Leakage Analysis`](https://github.com/VuDaiDuong-325/RTL-TVLA-Leakage) *(submodule)* |
 ---
 
 ## 💻 Course Tools Used
@@ -54,6 +59,10 @@ This repository collects academic materials organized by semester at **UIT** (Un
 | CE124       | Electronic Devices & Circuits              | LTSpice  |
 | CE224       | Embedded System Design                     | STM32CubeIDE/MX, KeilC, VSCode  |
 | CS221       | Natural Language Processing                | Google Colab, VSCode  |
+| CE222       | Digital Integrated Circuit Design          | Synopsys Custom Design  |
+| CE213       | Digital System Design with HDL             | Quartus13.1, Vivado   |
+| CE201       | Project 1                                  | Vivado  |
+| CE433       | SoC Design                                 | Quartus13.1, 18.1 Lite, Vivado  |
 ---
 
 ## 📦 Git Configuration Files
