@@ -1,0 +1,901 @@
+|hex5
+SW[15] => SW[15]~2.IN5
+SW[16] => SW[16]~1.IN5
+SW[17] => SW[17]~0.IN5
+HEX4[0] <= Decoder_7segments:dec4.port1
+HEX4[1] <= Decoder_7segments:dec4.port1
+HEX4[2] <= Decoder_7segments:dec4.port1
+HEX4[3] <= Decoder_7segments:dec4.port1
+HEX4[4] <= Decoder_7segments:dec4.port1
+HEX4[5] <= Decoder_7segments:dec4.port1
+HEX4[6] <= Decoder_7segments:dec4.port1
+HEX3[0] <= Decoder_7segments:dec3.port1
+HEX3[1] <= Decoder_7segments:dec3.port1
+HEX3[2] <= Decoder_7segments:dec3.port1
+HEX3[3] <= Decoder_7segments:dec3.port1
+HEX3[4] <= Decoder_7segments:dec3.port1
+HEX3[5] <= Decoder_7segments:dec3.port1
+HEX3[6] <= Decoder_7segments:dec3.port1
+HEX2[0] <= Decoder_7segments:dec2.port1
+HEX2[1] <= Decoder_7segments:dec2.port1
+HEX2[2] <= Decoder_7segments:dec2.port1
+HEX2[3] <= Decoder_7segments:dec2.port1
+HEX2[4] <= Decoder_7segments:dec2.port1
+HEX2[5] <= Decoder_7segments:dec2.port1
+HEX2[6] <= Decoder_7segments:dec2.port1
+HEX1[0] <= Decoder_7segments:dec1.port1
+HEX1[1] <= Decoder_7segments:dec1.port1
+HEX1[2] <= Decoder_7segments:dec1.port1
+HEX1[3] <= Decoder_7segments:dec1.port1
+HEX1[4] <= Decoder_7segments:dec1.port1
+HEX1[5] <= Decoder_7segments:dec1.port1
+HEX1[6] <= Decoder_7segments:dec1.port1
+HEX0[0] <= Decoder_7segments:dec0.port1
+HEX0[1] <= Decoder_7segments:dec0.port1
+HEX0[2] <= Decoder_7segments:dec0.port1
+HEX0[3] <= Decoder_7segments:dec0.port1
+HEX0[4] <= Decoder_7segments:dec0.port1
+HEX0[5] <= Decoder_7segments:dec0.port1
+HEX0[6] <= Decoder_7segments:dec0.port1
+
+
+|hex5|Mux51_3bit:mux4
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+U[0] => U[0]~2.IN1
+U[1] => U[1]~1.IN1
+U[2] => U[2]~0.IN1
+V[0] => V[0]~2.IN1
+V[1] => V[1]~1.IN1
+V[2] => V[2]~0.IN1
+W[0] => W[0]~2.IN1
+W[1] => W[1]~1.IN1
+W[2] => W[2]~0.IN1
+X[0] => X[0]~2.IN1
+X[1] => X[1]~1.IN1
+X[2] => X[2]~0.IN1
+Y[0] => Y[0]~2.IN1
+Y[1] => Y[1]~1.IN1
+Y[2] => Y[2]~0.IN1
+M[0] <= Mux51_1bit:bit0.port6
+M[1] <= Mux51_1bit:bit1.port6
+M[2] <= Mux51_1bit:bit2.port6
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit0|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit0|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit0|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit0|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit1|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit1|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit1|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit1|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit2
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit2|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit2|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit2|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux4|Mux51_1bit:bit2|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+U[0] => U[0]~2.IN1
+U[1] => U[1]~1.IN1
+U[2] => U[2]~0.IN1
+V[0] => V[0]~2.IN1
+V[1] => V[1]~1.IN1
+V[2] => V[2]~0.IN1
+W[0] => W[0]~2.IN1
+W[1] => W[1]~1.IN1
+W[2] => W[2]~0.IN1
+X[0] => X[0]~2.IN1
+X[1] => X[1]~1.IN1
+X[2] => X[2]~0.IN1
+Y[0] => Y[0]~2.IN1
+Y[1] => Y[1]~1.IN1
+Y[2] => Y[2]~0.IN1
+M[0] <= Mux51_1bit:bit0.port6
+M[1] <= Mux51_1bit:bit1.port6
+M[2] <= Mux51_1bit:bit2.port6
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit0|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit0|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit0|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit0|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit1|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit1|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit1|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit1|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit2
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit2|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit2|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit2|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux3|Mux51_1bit:bit2|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+U[0] => U[0]~2.IN1
+U[1] => U[1]~1.IN1
+U[2] => U[2]~0.IN1
+V[0] => V[0]~2.IN1
+V[1] => V[1]~1.IN1
+V[2] => V[2]~0.IN1
+W[0] => W[0]~2.IN1
+W[1] => W[1]~1.IN1
+W[2] => W[2]~0.IN1
+X[0] => X[0]~2.IN1
+X[1] => X[1]~1.IN1
+X[2] => X[2]~0.IN1
+Y[0] => Y[0]~2.IN1
+Y[1] => Y[1]~1.IN1
+Y[2] => Y[2]~0.IN1
+M[0] <= Mux51_1bit:bit0.port6
+M[1] <= Mux51_1bit:bit1.port6
+M[2] <= Mux51_1bit:bit2.port6
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit0|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit0|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit0|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit0|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit1|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit1|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit1|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit1|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit2
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit2|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit2|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit2|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux2|Mux51_1bit:bit2|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+U[0] => U[0]~2.IN1
+U[1] => U[1]~1.IN1
+U[2] => U[2]~0.IN1
+V[0] => V[0]~2.IN1
+V[1] => V[1]~1.IN1
+V[2] => V[2]~0.IN1
+W[0] => W[0]~2.IN1
+W[1] => W[1]~1.IN1
+W[2] => W[2]~0.IN1
+X[0] => X[0]~2.IN1
+X[1] => X[1]~1.IN1
+X[2] => X[2]~0.IN1
+Y[0] => Y[0]~2.IN1
+Y[1] => Y[1]~1.IN1
+Y[2] => Y[2]~0.IN1
+M[0] <= Mux51_1bit:bit0.port6
+M[1] <= Mux51_1bit:bit1.port6
+M[2] <= Mux51_1bit:bit2.port6
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit0|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit0|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit0|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit0|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit1|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit1|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit1|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit1|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit2
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit2|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit2|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit2|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux1|Mux51_1bit:bit2|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+U[0] => U[0]~2.IN1
+U[1] => U[1]~1.IN1
+U[2] => U[2]~0.IN1
+V[0] => V[0]~2.IN1
+V[1] => V[1]~1.IN1
+V[2] => V[2]~0.IN1
+W[0] => W[0]~2.IN1
+W[1] => W[1]~1.IN1
+W[2] => W[2]~0.IN1
+X[0] => X[0]~2.IN1
+X[1] => X[1]~1.IN1
+X[2] => X[2]~0.IN1
+Y[0] => Y[0]~2.IN1
+Y[1] => Y[1]~1.IN1
+Y[2] => Y[2]~0.IN1
+M[0] <= Mux51_1bit:bit0.port6
+M[1] <= Mux51_1bit:bit1.port6
+M[2] <= Mux51_1bit:bit2.port6
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit0|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit0|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit0|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit0|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit1|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit1|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit1|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit1|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit2
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit2|Mux21_1bit:mux1
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit2|Mux21_1bit:mux2
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit2|Mux21_1bit:mux3
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Mux51_3bit:mux0|Mux51_1bit:bit2|Mux21_1bit:mux4
+x => m~0.DATAA
+y => m~0.DATAB
+s => m~0.OUTPUTSELECT
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Decoder_7segments:dec4
+SW[15] => LessThan0.IN6
+SW[15] => Equal0.IN2
+SW[15] => Equal1.IN1
+SW[15] => Equal2.IN2
+SW[15] => Equal3.IN2
+SW[15] => Equal4.IN0
+SW[16] => LessThan0.IN5
+SW[16] => Equal0.IN0
+SW[16] => Equal1.IN0
+SW[16] => Equal2.IN1
+SW[16] => Equal3.IN1
+SW[16] => Equal4.IN2
+SW[17] => LessThan0.IN4
+SW[17] => Equal0.IN1
+SW[17] => Equal1.IN2
+SW[17] => Equal2.IN0
+SW[17] => Equal3.IN0
+SW[17] => Equal4.IN1
+HEX0[0] <= HEX0~0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0~4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0~5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Decoder_7segments:dec3
+SW[15] => LessThan0.IN6
+SW[15] => Equal0.IN2
+SW[15] => Equal1.IN1
+SW[15] => Equal2.IN2
+SW[15] => Equal3.IN2
+SW[15] => Equal4.IN0
+SW[16] => LessThan0.IN5
+SW[16] => Equal0.IN0
+SW[16] => Equal1.IN0
+SW[16] => Equal2.IN1
+SW[16] => Equal3.IN1
+SW[16] => Equal4.IN2
+SW[17] => LessThan0.IN4
+SW[17] => Equal0.IN1
+SW[17] => Equal1.IN2
+SW[17] => Equal2.IN0
+SW[17] => Equal3.IN0
+SW[17] => Equal4.IN1
+HEX0[0] <= HEX0~0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0~4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0~5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Decoder_7segments:dec2
+SW[15] => LessThan0.IN6
+SW[15] => Equal0.IN2
+SW[15] => Equal1.IN1
+SW[15] => Equal2.IN2
+SW[15] => Equal3.IN2
+SW[15] => Equal4.IN0
+SW[16] => LessThan0.IN5
+SW[16] => Equal0.IN0
+SW[16] => Equal1.IN0
+SW[16] => Equal2.IN1
+SW[16] => Equal3.IN1
+SW[16] => Equal4.IN2
+SW[17] => LessThan0.IN4
+SW[17] => Equal0.IN1
+SW[17] => Equal1.IN2
+SW[17] => Equal2.IN0
+SW[17] => Equal3.IN0
+SW[17] => Equal4.IN1
+HEX0[0] <= HEX0~0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0~4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0~5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Decoder_7segments:dec1
+SW[15] => LessThan0.IN6
+SW[15] => Equal0.IN2
+SW[15] => Equal1.IN1
+SW[15] => Equal2.IN2
+SW[15] => Equal3.IN2
+SW[15] => Equal4.IN0
+SW[16] => LessThan0.IN5
+SW[16] => Equal0.IN0
+SW[16] => Equal1.IN0
+SW[16] => Equal2.IN1
+SW[16] => Equal3.IN1
+SW[16] => Equal4.IN2
+SW[17] => LessThan0.IN4
+SW[17] => Equal0.IN1
+SW[17] => Equal1.IN2
+SW[17] => Equal2.IN0
+SW[17] => Equal3.IN0
+SW[17] => Equal4.IN1
+HEX0[0] <= HEX0~0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0~4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0~5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hex5|Decoder_7segments:dec0
+SW[15] => LessThan0.IN6
+SW[15] => Equal0.IN2
+SW[15] => Equal1.IN1
+SW[15] => Equal2.IN2
+SW[15] => Equal3.IN2
+SW[15] => Equal4.IN0
+SW[16] => LessThan0.IN5
+SW[16] => Equal0.IN0
+SW[16] => Equal1.IN0
+SW[16] => Equal2.IN1
+SW[16] => Equal3.IN1
+SW[16] => Equal4.IN2
+SW[17] => LessThan0.IN4
+SW[17] => Equal0.IN1
+SW[17] => Equal1.IN2
+SW[17] => Equal2.IN0
+SW[17] => Equal3.IN0
+SW[17] => Equal4.IN1
+HEX0[0] <= HEX0~0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0~1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0~4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0~5.DB_MAX_OUTPUT_PORT_TYPE
+
+

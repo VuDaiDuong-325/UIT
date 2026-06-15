@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef" \
+"tb_mac_tvla_time_impl.v" \
+"../../../../../mac_engine.srcs/sim_1/new/tb_mac_engine.v" \
+
+# Do not sort compile order
+nosort

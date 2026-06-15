@@ -1,0 +1,259 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Apr 20 17:14:42 2026
+# Process ID         : 880
+# Current directory  : D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1
+# Command line       : vivado.exe -log mac_engine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac_engine.tcl
+# Log file           : D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1/mac_engine.vds
+# Journal file       : D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1\vivado.jou
+# Running On         : VuDuong-32
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 1992 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8448 MB
+# Swap memory        : 25467 MB
+# Total Virtual      : 33916 MB
+# Available Virtual  : 19811 MB
+#-----------------------------------------------------------
+source mac_engine.tcl -notrace
+create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 553.113 ; gain = 219.543
+Command: synth_design -top mac_engine -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8964
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1094.559 ; gain = 536.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac_engine' [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/new/mac_engine.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mac_controller' [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/new/mac_controller.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/new/mac_controller.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mac_controller' (0#1) [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/new/mac_controller.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mac_core' [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/imports/new/mac_core.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'mac_core' (0#1) [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/imports/new/mac_core.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'mac_engine' (0#1) [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/new/mac_engine.v:3]
+WARNING: [Synth 8-6014] Unused sequential element c_reg3_reg was removed.  [D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.srcs/sources_1/imports/new/mac_core.v:50]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1213.875 ; gain = 655.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1213.875 ; gain = 655.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1213.875 ; gain = 655.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mac_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                 COMPUTE |                              010 |                               01
+                    WAIT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mac_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1213.875 ; gain = 655.812
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p_reg_reg, operation Mode is: (0 or P)+(A2*B2)'.
+DSP Report: register b_reg_reg is absorbed into DSP p_reg_reg.
+DSP Report: register a_reg_reg is absorbed into DSP p_reg_reg.
+DSP Report: register p_reg_reg is absorbed into DSP p_reg_reg.
+DSP Report: register m_reg_reg is absorbed into DSP p_reg_reg.
+DSP Report: operator p_reg0 is absorbed into DSP p_reg_reg.
+DSP Report: operator m_reg0 is absorbed into DSP p_reg_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.453 ; gain = 849.391
+---------------------------------------------------------------------------------
+ Sort Area is  p_reg_reg_0 : 0 0 : 662 662 : Used 1 time 100
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac_core    | (0 or P)+(A2*B2)' | 8      | 8      | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.453 ; gain = 849.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.453 ; gain = 849.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac_core    | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 1    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |     6|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     2|
+|5     |LUT2    |    10|
+|6     |LUT3    |    21|
+|7     |LUT4    |     3|
+|8     |LUT5    |     4|
+|9     |LUT6    |    14|
+|10    |FDCE    |    14|
+|11    |FDPE    |     1|
+|12    |FDRE    |    41|
+|13    |IBUF    |    27|
+|14    |OBUF    |    33|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------+---------------+------+
+|      |Instance       |Module         |Cells |
++------+---------------+---------------+------+
+|1     |top            |               |   178|
+|2     |  u_controller |mac_controller |    69|
+|3     |  u_core       |mac_core       |    48|
++------+---------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 1638.262 ; gain = 1080.199
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1654.305 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1766.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 95dbfb91
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:56 . Memory (MB): peak = 1766.277 ; gain = 1213.164
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1766.277 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1/mac_engine.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mac_engine_utilization_synth.rpt -pb mac_engine_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 17:16:00 2026...

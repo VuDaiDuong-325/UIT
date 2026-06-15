@@ -1,0 +1,60 @@
+Check quyền server:
+ps -ef | grep lmgrd
+ps -ef | grep snpslmd
+
+Chạy license:
+/usr/synopsys/scl/2018.06/linux64/bin/lmgrd -c /usr/synopsys/Synopsys.dat
+export SNPSLMD_LICENSE_FILE=27000@localhost
+
+Chạy custom desgin (cnay chạy cuối cùng sau khi thêm hết license và path):
+/usr/synopsys/customcompiler/N-2017.12-SP1-2/bin/custom_compiler
+
+
+Copy thư viện từ project cũ
+cp ../lib.defs .
+cp ../tech.db .
+cp ../display.tcl .
+
+Cho DFF:
+cp ./lab1vlsi/lib.defs .
+cp ../lab1vlsi/tech.db .
+cp ../lab1vlsi/display.tcl .
+
+
+Thêm thư viện reference90RF:
+echo "DEFINE reference90RF /root/lab1vlsi/PDK/reference90RF" >> lib.defs
+
+
+PATH cho hspice:
+export PATH=$PATH:/usr/synopsys/hspice/N-2017.12-SP2/hspice/bin
+
+PATH cho waveview:
+export PATH=$PATH:/usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/bin
+
+PATH cho LD_LIBRARY:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/lib
+
+Sửa một số lỗi khi chạy DRC, LVS, LPE:
+*evp: export PATH=$PATH:/usr/synopsys/hercules/B-2008.09-SP5/bin/AMD.64
+
+*HERCULES_HOME_DIR: 
+export HERCULES_HOME=/usr/synopsys/hercules/B-2008.09-SP5
+export HERCULES_HOME_DIR=/usr/synopsys/hercules/B-2008.09-SP5
+
+*StarXtract:
+export STARRC_HOME=/usr/synopsys/starrc/O-2018.06-SP1
+export PATH=$STARRC_HOME/linux64_starrc/bin:$STARRC_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$STARRC_HOME/linux64_starrc/lib:$LD_LIBRARY_PATH
+
+/usr/synopsys/scl/2018.06/linux64/bin/lmgrd -c /usr/synopsys/Synopsys.dat
+export SNPSLMD_LICENSE_FILE=27000@localhost
+export PATH=$PATH:/usr/synopsys/hspice/N-2017.12-SP2/hspice/bin
+export PATH=$PATH:/usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/synopsys/wv/N-2017.12-SP2/platforms/linux64/lib
+export PATH=$PATH:/usr/synopsys/hercules/B-2008.09-SP5/bin/AMD.64
+export HERCULES_HOME=/usr/synopsys/hercules/B-2008.09-SP5
+export HERCULES_HOME_DIR=/usr/synopsys/hercules/B-2008.09-SP5
+export STARRC_HOME=/usr/synopsys/starrc/O-2018.06-SP1
+export PATH=$STARRC_HOME/linux64_starrc/bin:$STARRC_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$STARRC_HOME/linux64_starrc/lib:$LD_LIBRARY_PATH
+/usr/synopsys/customcompiler/N-2017.12-SP1-2/bin/custom_compiler

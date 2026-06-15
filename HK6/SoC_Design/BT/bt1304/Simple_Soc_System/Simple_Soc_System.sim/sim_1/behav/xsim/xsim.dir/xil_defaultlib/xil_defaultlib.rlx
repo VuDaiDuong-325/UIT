@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/apb_master.v,1776591069,verilog,,D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/apb_slave.v,,apb_master,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/apb_slave.v,1776591133,verilog,,D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/apb_system.v,,apb_slave,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/apb_system.v,1776591182,verilog,,D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/signed_mul_8bit.v,,apb_system,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/signed_mul_8bit.v,1776591101,verilog,,D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/tb_apb_system.v,,signed_multiplier_8bit,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/SoC_Design/BT/bt1304/Simple_Soc_System/Simple_Soc_System.srcs/sources_1/new/tb_apb_system.v,1776600376,verilog,,,,tb_apb_system,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,

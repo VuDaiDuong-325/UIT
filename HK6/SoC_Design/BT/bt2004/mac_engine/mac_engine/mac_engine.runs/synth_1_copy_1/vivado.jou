@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Apr 23 23:08:55 2026
+# Process ID         : 17488
+# Current directory  : D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1_copy_1
+# Command line       : vivado.exe -log mac_engine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac_engine.tcl
+# Log file           : D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1_copy_1/mac_engine.vds
+# Journal file       : D:/HK6/SoC_Design/BT/bt2004/mac_engine/mac_engine/mac_engine.runs/synth_1_copy_1\vivado.jou
+# Running On         : VuDuong-32
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 1992 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8448 MB
+# Swap memory        : 25467 MB
+# Total Virtual      : 33916 MB
+# Available Virtual  : 20931 MB
+#-----------------------------------------------------------
+source mac_engine.tcl -notrace

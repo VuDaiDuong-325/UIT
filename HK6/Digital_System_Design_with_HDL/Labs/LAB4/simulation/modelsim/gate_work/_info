@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/HK6/Digital_System_Design_with_HDL/Labs/LAB4/simulation/modelsim
+vALU_32bit
+Z1 !s110 1778151948
+!i10b 1
+!s100 J60da8c4hn5AhCcl<CQ5M1
+IQ2caTm22A6M39Z<MF:dK^3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1778151795
+8lab4.vo
+Flab4.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1778151948.000000
+!s107 lab4.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|lab4.vo|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z6 tCvgOpt 0
+n@a@l@u_32bit
+vtb_ALU_32bit
+R1
+!i10b 1
+!s100 9WB>Y5^8<8R?4X5`[MK[B2
+IzRP=8gbM:f=AoYhNS2k_Z3
+R2
+R0
+w1778151204
+8D:/HK6/Digital_System_Design_with_HDL/Labs/LAB4/tb_ALU_32bit.v
+FD:/HK6/Digital_System_Design_with_HDL/Labs/LAB4/tb_ALU_32bit.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/HK6/Digital_System_Design_with_HDL/Labs/LAB4/tb_ALU_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/HK6/Digital_System_Design_with_HDL/Labs/LAB4|D:/HK6/Digital_System_Design_with_HDL/Labs/LAB4/tb_ALU_32bit.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/HK6/Digital_System_Design_with_HDL/Labs/LAB4
+R6
+ntb_@a@l@u_32bit

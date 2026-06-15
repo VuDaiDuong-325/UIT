@@ -1,0 +1,144 @@
+|Mux51_3bit
+s[0] => s[0].IN3
+s[1] => s[1].IN3
+s[2] => s[2].IN3
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+M[0] <= Mux51_1bit:bit0.port6
+M[1] <= Mux51_1bit:bit1.port6
+M[2] <= Mux51_1bit:bit2.port6
+
+
+|Mux51_3bit|Mux51_1bit:bit0
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+s[2] => s[2].IN1
+u => u.IN1
+v => v.IN1
+w => w.IN1
+x => x.IN1
+y => y.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|Mux51_3bit|Mux51_1bit:bit0|Mux21_1bit:mux1
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit0|Mux21_1bit:mux2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit0|Mux21_1bit:mux3
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit0|Mux21_1bit:mux4
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+s[2] => s[2].IN1
+u => u.IN1
+v => v.IN1
+w => w.IN1
+x => x.IN1
+y => y.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|Mux51_3bit|Mux51_1bit:bit1|Mux21_1bit:mux1
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit1|Mux21_1bit:mux2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit1|Mux21_1bit:mux3
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit1|Mux21_1bit:mux4
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit2
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+s[2] => s[2].IN1
+u => u.IN1
+v => v.IN1
+w => w.IN1
+x => x.IN1
+y => y.IN1
+m <= Mux21_1bit:mux4.port3
+
+
+|Mux51_3bit|Mux51_1bit:bit2|Mux21_1bit:mux1
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit2|Mux21_1bit:mux2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit2|Mux21_1bit:mux3
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux51_3bit|Mux51_1bit:bit2|Mux21_1bit:mux4
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,10 @@
+|Bai1_4state
+KEY[0] => pre_val.CLK
+KEY[0] => state~1.DATAIN
+KEY[1] => pre_val.ACLR
+KEY[1] => state~3.DATAIN
+SW[0] => always1.IN1
+SW[0] => pre_val.DATAIN
+LEDG[0] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+
+

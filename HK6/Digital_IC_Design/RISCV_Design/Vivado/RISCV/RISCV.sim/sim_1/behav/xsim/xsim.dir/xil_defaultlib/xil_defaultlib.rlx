@@ -1,0 +1,16 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code4-3.v,1774410662,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code4-4.v,,m_get_type,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-1.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-12.v,,m_adder,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-12.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-13.v,,m_RF,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-13.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-14.v,,m_proc2,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-14.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-15.v,,m_am_imem,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-15.v,1774402593,verilog,,,,m_top,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-2.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-3.v,,m_cmp,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-3.v,1774419655,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-9.v,,m_mux,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-5.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-6.v,,m_circuit1,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-7.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-8.v,,m_circuit2,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-9.v,1774402593,verilog,,D:/HK6/Digital_IC_Design/RISCV_Design/UIT/QuizCode/code5-11.v,,m_proc1,,,../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/HK6/Digital_IC_Design/RISCV_Design/Vivado/RISCV/RISCV.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,

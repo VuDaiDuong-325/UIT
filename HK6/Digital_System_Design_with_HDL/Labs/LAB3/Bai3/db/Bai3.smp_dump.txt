@@ -1,0 +1,8 @@
+
+State Machine - |Morse_Encoder|state
+Name state.DASH state.DOT state.READ state.IDLE state.GAP 
+state.IDLE 0 0 0 0 0 
+state.READ 0 0 1 1 0 
+state.DOT 0 1 0 1 0 
+state.DASH 1 0 0 1 0 
+state.GAP 0 0 0 1 1 

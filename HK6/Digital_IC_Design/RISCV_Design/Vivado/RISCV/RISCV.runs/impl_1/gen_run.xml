@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1774403832">
+  <File Type="REPORTS-TCL" Name="m_top_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="m_top_power_summary_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="m_top.mmi"/>
+  <File Type="OPT-DRC" Name="m_top_drc_opted.rpt"/>
+  <File Type="BG-DRC" Name="m_top.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="m_top_route_status.pb"/>
+  <File Type="BG-BGN" Name="m_top.bgn"/>
+  <File Type="PLACE-UTIL" Name="m_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="m_top_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="m_top_io_placed.rpt"/>
+  <File Type="BG-BIN" Name="m_top.bin"/>
+  <File Type="PLACE-CTRL" Name="m_top_control_sets_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="m_top_power_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="m_top.msk"/>
+  <File Type="BITSTR-RBT" Name="m_top.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="m_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="m_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="m_top_route_status.rpt"/>
+  <File Type="PA-TCL" Name="m_top.tcl"/>
+  <File Type="ROUTE-PWR" Name="m_top_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="m_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="m_top_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="m_top_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="m_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="m_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="m_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="m_top.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="m_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="m_top_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="m_top.vdi"/>
+  <File Type="ROUTE-CLK" Name="m_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="m_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="m_top_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="m_top_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="m_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="m_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="m_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="m_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="m_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="m_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="m_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-NKY" Name="m_top.nky"/>
+  <File Type="BITSTR-BMM" Name="m_top_bd.bmm"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="m_top.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="m_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="m_top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="m_top_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="m_top_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="m_top_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="m_top_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="m_top_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="m_top_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="m_top_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="m_top_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="m_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="m_top_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="m_top.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="m_top_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="m_top_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="m_top.rcfi"/>
+  <File Type="CFI_FILE" Name="m_top.cfi"/>
+  <File Type="RNPI_FILE" Name="m_top.rnpi"/>
+  <File Type="NPI_FILE" Name="m_top.npi"/>
+  <File Type="RBD_FILE" Name="m_top.rbd"/>
+  <File Type="ROUTE-RQS" Name="m_top_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="m_top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="MMI-FILE" Name="m_top.mmi"/>
+  <File Type="BIF-FILE" Name="m_top.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="m_top_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="m_top_pld.bif"/>
+  <File Type="LTX-FILE" Name="m_top.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="m_top_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="m_top_pld.ltx"/>
+  <File Type="RCDO-FILE" Name="m_top.rcdo"/>
+  <File Type="MARKER-RCDO-FILE" Name="m_top_markers.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="m_top_pld.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="m_top_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="m_top_boot.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="m_top_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="m_top_boot_markers.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="m_top_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="m_top_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="m_top_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="m_top_pld_unmask.rnpi"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="m_top_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="m_top_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="m_top_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="m_top_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="m_top_pld_unmask.rcdo"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="m_top.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="m_top.ncr"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../UIT/QuizCode/code4-1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../UIT/QuizCode/code4-2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="m_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

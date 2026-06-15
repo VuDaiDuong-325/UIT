@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at single_port_RAM.v(19): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at tb_ram_wave.v(14): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at tb_ram_self_checking.v(14): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at sram_controller.v(21): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at tb_sram_controller.v(19): extended using "x" or "z"

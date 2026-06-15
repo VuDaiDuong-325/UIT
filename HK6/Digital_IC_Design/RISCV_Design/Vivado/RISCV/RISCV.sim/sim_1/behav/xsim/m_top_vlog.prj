@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef" \
+"../../../../../../UIT/QuizCode/code5-1.v" \
+"../../../../../../UIT/QuizCode/code5-12.v" \
+"../../../../../../UIT/QuizCode/code5-13.v" \
+"../../../../../../UIT/QuizCode/code5-14.v" \
+"../../../../../../UIT/QuizCode/code5-15.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

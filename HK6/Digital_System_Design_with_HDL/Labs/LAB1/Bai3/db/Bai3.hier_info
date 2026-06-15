@@ -1,0 +1,70 @@
+|D_LF
+D => D~0.IN3
+Clock => Clock~0.IN2
+Qa <= D_latch:d1.port2
+Qan <= D_latch:d1.port3
+Qb <= D_FF:d2.port2
+Qbn <= D_FF:d2.port3
+Qc <= D_FF:d3.port2
+Qcn <= D_FF:d3.port3
+
+
+|D_LF|D_latch:d1
+D => Qa~0.IN0
+D => Qb~0.IN0
+Clk => Qa~0.IN1
+Clk => Qb~0.IN1
+Qa <= Qa~2.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|D_LF|D_FF:d2
+D => D~0.IN1
+Clock => Clock~0.IN1
+Q <= D_latch:d1.port2
+Qn <= D_latch:d1.port3
+
+
+|D_LF|D_FF:d2|D_latch:d0
+D => Qa~0.IN0
+D => Qb~0.IN0
+Clk => Qa~0.IN1
+Clk => Qb~0.IN1
+Qa <= Qa~2.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|D_LF|D_FF:d2|D_latch:d1
+D => Qa~0.IN0
+D => Qb~0.IN0
+Clk => Qa~0.IN1
+Clk => Qb~0.IN1
+Qa <= Qa~2.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|D_LF|D_FF:d3
+D => D~0.IN1
+Clock => Clock~0.IN1
+Q <= D_latch:d1.port2
+Qn <= D_latch:d1.port3
+
+
+|D_LF|D_FF:d3|D_latch:d0
+D => Qa~0.IN0
+D => Qb~0.IN0
+Clk => Qa~0.IN1
+Clk => Qb~0.IN1
+Qa <= Qa~2.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|D_LF|D_FF:d3|D_latch:d1
+D => Qa~0.IN0
+D => Qb~0.IN0
+Clk => Qa~0.IN1
+Clk => Qb~0.IN1
+Qa <= Qa~2.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

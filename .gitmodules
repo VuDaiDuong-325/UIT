@@ -22,3 +22,18 @@
 	path = HK5/CE224_EmbeddedSystemDesign/Project
 	url = https://github.com/DuyNDP/CE224_Control_Led_APA102.git
 	branch = main
+[submodule "HK6/Project1"]
+	path = HK6/Project1
+	url = https://github.com/VuDaiDuong-325/int8-matmul-accelerator.git
+[submodule "HK6/Digital_System_Design_with_HDL/Project/Design"]
+	path = HK6/Digital_System_Design_with_HDL/Project/Design
+	url = https://github.com/VuDaiDuong-325/int8-matmul-accelerator.git
+[submodule "HK6/Digital_IC_Design/Project"]
+	path = HK6/Digital_IC_Design/Project
+	url = https://github.com/VuDaiDuong-325/CMOS-digital-circuits.git
+[submodule "HK6/SoC_Design/Project"]
+	path = HK6/SoC_Design/Project
+	url = https://github.com/VuDaiDuong-325/VGA-Image-Processing-Pipeline.git
+[submodule "HK6/SoC_Design/BT/BTL"]
+	path = HK6/SoC_Design/BT/BTL
+	url = https://github.com/VuDaiDuong-325/RTL-TVLA-Leakage.git

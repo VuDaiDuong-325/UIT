@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../Apps/Study/Vivado/2025.2/Vivado/data/rsb/busdef" \
+"../../../../Simple_Soc_System.srcs/sources_1/new/apb_master.v" \
+"../../../../Simple_Soc_System.srcs/sources_1/new/apb_slave.v" \
+"../../../../Simple_Soc_System.srcs/sources_1/new/apb_system.v" \
+"../../../../Simple_Soc_System.srcs/sources_1/new/signed_mul_8bit.v" \
+"../../../../Simple_Soc_System.srcs/sources_1/new/tb_apb_system.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
