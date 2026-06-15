@@ -1,4 +1,5 @@
 # 📚 UIT - Computer Engineering Documents
+> **Developed by Vu Dai Duong - CE student at UIT**
 
 This repository collects academic materials organized by semester at **UIT** (University of Information Technology), majoring in **Computer Engineering**.
 
